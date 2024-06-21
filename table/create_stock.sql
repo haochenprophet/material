@@ -1,6 +1,6 @@
 CREATE TABLE `stock` (
   `idstock` int(11) NOT NULL AUTO_INCREMENT,
-  `uuid` varchar(45) NOT NULL,
+  `uuid` varchar(45) NOT NULL DEFAULT (uuid()),
   `number` varchar(45) NOT NULL COMMENT 'stock number',
   `time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `idcard` varchar(45) DEFAULT NULL COMMENT 'ID card',
