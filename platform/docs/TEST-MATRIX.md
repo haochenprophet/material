@@ -6,7 +6,7 @@
 
 | 命令 | PASS | 覆盖 |
 |---|---|---|
-| `php platform/bin/verify.php` | 342 | 路由/API/页面/manifest/旧代码 |
+| `php platform/bin/verify.php` | 344 | 路由/API/页面/manifest/旧代码 |
 | `php platform/tests/run.php` | 31 | 状态机/定价/BOM/规则 |
 | `php platform/tests/api.php` | 23 | API 信封/订单/报价/BOM |
 | `php platform/tests/db.php` | 7 | 配置/仓储/失败路径 |

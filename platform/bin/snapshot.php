@@ -2,15 +2,13 @@
 declare(strict_types=1);
 
 /**
- * 生成不可变发布快照（目录副本，不删除旧 release）。
+ * Git 版本管控入口：只更新 manifest/RELEASE，不复制代码、不创建 release 目录。
  * 用法：php platform/bin/snapshot.php
  *
- * 结构：
- *   platform/manifest.json
- *   platform/RELEASE
- *   platform/releases/v0.1.0-YYYYmmdd-HHMMSS/
- *     app/ framework/ views/ public/ config/ docs/ bin/ tests/
- *     VERSION RELEASE manifest.json
+ * 变更为：
+ * - 文件清单来自 git 已跟踪文件（ai-test 才有 tests/seed 资产）
+ * - 发布标识来自当前分支 + VERSION
+ * - 真正的版本回滚使用 git commit/tag，不使用目录副本
  */
 if (PHP_SAPI !== 'cli') {
     http_response_code(403);
@@ -20,51 +18,40 @@ if (PHP_SAPI !== 'cli') {
 
 $root = dirname(__DIR__);
 $version = trim((string) file_get_contents($root . '/VERSION'));
-$release = 'v' . $version . '-' . date('Ymd-His');
-$releaseDir = $root . '/releases/' . $release;
-$suffix = 1;
-while (is_dir($releaseDir)) {
-    $release = 'v' . $version . '-' . date('Ymd-His') . '-' . (++$suffix);
-    $releaseDir = $root . '/releases/' . $release;
+$branch = trim((string) @shell_exec('git -C ' . escapeshellarg($root) . ' rev-parse --abbrev-ref HEAD 2>NUL'));
+if ($branch === '') {
+    $branch = 'unknown';
 }
+$release = 'git-' . preg_replace('/[^a-z0-9_-]/i', '-', $branch) . '-v' . $version;
 
-$skipDirs = ['releases', 'storage', '.git'];
-$skipFiles = ['manifest.json', 'RELEASE'];
-
-/** @return array<int, string> 相对路径（/ 分隔） */
-function collect_files(string $root, array $skipDirs, array $skipFiles): array
-{
-    $out = [];
-    $it = new RecursiveIteratorIterator(
-        new RecursiveCallbackFilterIterator(
-            new RecursiveDirectoryIterator($root, FilesystemIterator::SKIP_DOTS),
-            static function (SplFileInfo $file) use ($skipDirs): bool {
-                if ($file->isDir() && in_array($file->getFilename(), $skipDirs, true)) {
-                    return false;
-                }
-                return true;
-            }
-        )
-    );
-    foreach ($it as $file) {
-        if (!$file instanceof SplFileInfo || !$file->isFile()) {
+$raw = @shell_exec('git -C ' . escapeshellarg($root) . ' ls-files -z 2>NUL');
+$files = [];
+if (is_string($raw) && $raw !== '') {
+    foreach (explode("\0", $raw) as $rel) {
+        $rel = str_replace('\\', '/', trim($rel));
+        if ($rel === '' || $rel === 'manifest.json' || $rel === 'RELEASE') {
             continue;
         }
-        $rel = str_replace('\\', '/', substr($file->getPathname(), strlen($root) + 1));
-        if (in_array($rel, $skipFiles, true)) {
+        if (str_starts_with($rel, 'releases/') || str_starts_with($rel, 'storage/')) {
             continue;
         }
-        $out[] = $rel;
+        if (!is_file($root . '/' . $rel)) {
+            continue;
+        }
+        $files[] = $rel;
     }
-    sort($out);
-    return $out;
+}
+sort($files);
+if ($files === []) {
+    fwrite(STDERR, "没有 git 跟踪文件；请在 material 仓库内运行，且先 git add 代码\n");
+    exit(1);
 }
 
-$files = collect_files($root, $skipDirs, $skipFiles);
 $manifest = [
     'app' => '物格云 MaterialGrid',
     'version' => $version,
     'release' => $release,
+    'branch' => $branch,
     'generated_at' => date('c'),
     'php' => PHP_VERSION,
     'files' => [],
@@ -77,9 +64,8 @@ foreach ($files as $rel) {
         'mtime' => date('c', (int) filemtime($path)),
     ];
 }
-
-$manifestJson = json_encode($manifest, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . PHP_EOL;
-if (file_put_contents($root . '/manifest.json', $manifestJson) === false) {
+$json = json_encode($manifest, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . PHP_EOL;
+if (file_put_contents($root . '/manifest.json', $json) === false) {
     fwrite(STDERR, "无法写入 manifest.json\n");
     exit(1);
 }
@@ -87,31 +73,7 @@ if (file_put_contents($root . '/RELEASE', $release . PHP_EOL) === false) {
     fwrite(STDERR, "无法写入 RELEASE\n");
     exit(1);
 }
-
-if (!is_dir($releaseDir) && !mkdir($releaseDir, 0777, true) && !is_dir($releaseDir)) {
-    fwrite(STDERR, "无法创建 release 目录: {$releaseDir}\n");
-    exit(1);
-}
-
-$copied = 0;
-foreach ($files as $rel) {
-    $src = $root . '/' . $rel;
-    $dst = $releaseDir . '/' . $rel;
-    $dir = dirname($dst);
-    if (!is_dir($dir) && !mkdir($dir, 0777, true) && !is_dir($dir)) {
-        fwrite(STDERR, "无法创建目录: {$dir}\n");
-        exit(1);
-    }
-    if (!copy($src, $dst)) {
-        fwrite(STDERR, "复制失败: {$rel}\n");
-        exit(1);
-    }
-    $copied++;
-}
-file_put_contents($releaseDir . '/manifest.json', $manifestJson);
-file_put_contents($releaseDir . '/RELEASE', $release . PHP_EOL);
-
+echo 'branch:  ' . $branch . PHP_EOL;
 echo 'release: ' . $release . PHP_EOL;
-echo 'files:   ' . $copied . PHP_EOL;
-echo 'dir:     ' . $releaseDir . PHP_EOL;
-echo 'manifest: ' . $root . '/manifest.json' . PHP_EOL;
+echo 'files:   ' . count($files) . ' (git tracked only)' . PHP_EOL;
+echo 'copy:    0 (no release directory)' . PHP_EOL;
