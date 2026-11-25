@@ -26,12 +26,12 @@ php platform/bin/release-check.php
 
 关键数据：
 
-- `verify.php` 342 PASS / 0 FAIL
+- `verify.php` 344 PASS / 0 FAIL
 - 47 个测试文件全部 PASS
 - `mats_platform_next2` 92 表/种子
 - 旧 `materiel` 13 表/0 行
 - `mats_platform_next` 部分迁移现场保留
-- 当前 release：v0.57.0（最终快照见 `RELEASE`）
+- 当前 release：v0.58.0（git tag；`RELEASE` 形如 `git-ai-v0.58.0`）
 - 旁路启动 8099：`/health` `/` `/bom` `/p/p1` `/trace` 200；`/pda` `/admin/listings` 未登录 302\n- QC 登录 8099 `/pda` 200，`layout-pda`
 - 旧代码完整性：`docs/GIT-INTEGRITY.md`（tracked 仅会话前已有 crdownload 删除）
 

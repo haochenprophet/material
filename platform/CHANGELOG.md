@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.58.0 — 2026-11-25
+
+### Changed
+- 版本管控改为 **git commit + git tag**，不再复制 release 目录。
+- `snapshot.php` 只更新 manifest/RELEASE（文件清单来自 `git ls-files`）。
+- 新增 `bin/git-release.php`；新增 `docs/GIT-WORKFLOW.md` / `docs/BRANCHES.md`。
+- `ai` 代码分支；`ai-test` 测试/demo 分支；数据库 schema 两分支一致。
+
 ## 0.57.0 — 2026-11-25
 
 ### Final

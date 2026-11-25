@@ -212,6 +212,7 @@ $required = [
     'views/pages/error.php',
     'docs/BASELINE.md',
     'docs/ROLLBACK.md',
+    'docs/GIT-WORKFLOW.md',
     'docs/TRACEABILITY.md',
     'docs/BUSINESS-ALIGNMENT.md',
     'docs/CLOSURE-REPORT.md',
@@ -264,6 +265,7 @@ $required = [
     'docs/SELLER-REVIEW-FLOW.md',
     '.env.example',
     'bin/checkpoint.php',
+    'bin/git-release.php',
     'docs/10H-PLAN.md',
     'README.md',
     'CHANGELOG.md',
@@ -395,7 +397,7 @@ Api::withBody(null);
 echo '[6/7] manifest' . PHP_EOL;
 $manifestFile = PLATFORM_PATH . '/manifest.json';
 if (!is_file($manifestFile)) {
-    warn('manifest.json 不存在', '先运行 php bin/snapshot.php');
+    warn('manifest.json 不存在', '先运行 php bin/snapshot.php（只更新 manifest）');
 } else {
     $manifest = json_decode((string) file_get_contents($manifestFile), true);
     if (!is_array($manifest) || !is_array($manifest['files'] ?? null)) {

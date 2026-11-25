@@ -5,22 +5,22 @@
 - [ ] `git -C material status --short` 只包含预期新增，旧代码无修改
 - [ ] `php platform/bin/verify.php` → 0 FAIL
 - [ ] `php platform/bin/release-check.php` → `release: READY`（44 项离线 / 48 项含 DB）
-- [ ] `php platform/bin/snapshot.php` → 新 release 目录
+- [ ] `php platform/bin/snapshot.php` → 只更新 manifest/RELEASE（不复制代码）
+- [ ] `php platform/bin/git-release.php` → git tag
 - [ ] `php platform/tests/e2e.php` → PASS（需 8091）
-- [ ] 数据库：新库 77 表/种子；旧 `materiel` 13/0
-- [ ] 备份：旧库、旧代码、当前 release
+- [ ] 数据库：新库 92 表/种子；旧 `materiel` 13/0
+- [ ] 备份：数据库备份；代码由 git tag 保存（不再复制 release）
 - [ ] 回滚路径：`docs/ROLLBACK.md` 已复核
 
 ## 2. 发布物
 
 ```text
-platform/releases/v<version>-<timestamp>/
-  app/ framework/ views/ public/ config/ database/ docs/ bin/ tests/
-  VERSION RELEASE manifest.json
+git tag: ai-v<version> / ai-test-v<version>
+manifest.json / RELEASE（git 跟踪文件清单）
 ```
 
-- 不删除旧 release。
-- 不覆盖唯一副本。
+- 不再创建 release 目录副本。
+- 不删除历史 release。
 - `RELEASE` / `manifest.json` 必须匹配。
 
 ## 3. 发布后

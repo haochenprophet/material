@@ -83,7 +83,7 @@
 | 检查 | 结果 |
 |---|---|
 | `php -l` 全部 PHP | 0 failure |
-| `php bin/verify.php` | PASS 342 / FAIL 0 / WARN 0 |
+| `php bin/verify.php` | PASS 344 / FAIL 0 / WARN 0 |
 | `php tests/run.php` | PASS 31 / FAIL 0 |
 | `php tests/api.php` | PASS 23 / FAIL 0 |
 | `php tests/db.php` | PASS 7 / FAIL 0 |
@@ -170,6 +170,6 @@
 v0.1.0 的 **UI/流程/规则/API/DB 只读/审核/迁移/回溯切片** 已完成并验证。
 真实生产仍 **NO-GO**：账号库完整化、支付分账、45 表字段映射、对象存储、真机矩阵、监控未完成。
 
-## 9. 最终验收结论\n\n- Q01–Q16 全部 DONE；无 PENDING。\n- 92 表；verify 342 PASS；release-check 48 项 READY。\n- 点评/信用/商城/KYC/图片/字段映射/沙箱支付/佣金/API/部署/迁移/回归均已形成可验证证据。\n- 真实生产仍 NO-GO：真实支付/KYC/对象存储/真机/监控/生产部署未完成。\n- 最终 release 与 manifest 以 `RELEASE` / `manifest.json` 为准。\n\n## 10. 10 小时复盘
+## 9. 最终验收结论\n\n- Q01–Q16 全部 DONE；无 PENDING。\n- 版本管控：git commit + git tag；不再复制 release。\n- 92 表；verify 344 PASS；release-check 48 项 READY。\n- 点评/信用/商城/KYC/图片/字段映射/沙箱支付/佣金/API/部署/迁移/回归均已形成可验证证据。\n- 真实生产仍 NO-GO：真实支付/KYC/对象存储/真机/监控/生产部署未完成。\n- 最终 release 与 manifest 以 `RELEASE` / `manifest.json` 为准。\n\n## 10. 10 小时复盘
 
 完整复盘见 [10H-REVIEW.md](10H-REVIEW.md)：交付、证据、未完成项、Go/No-Go。
