@@ -17,6 +17,7 @@ final class CuiRouter
         $this->routes = [
             '/' => ['view' => 'home', 'layout' => ['title' => '首页', 'active' => 'home']],
             '/search' => ['view' => 'search', 'layout' => ['title' => '寻料 / 搜索', 'active' => 'search']],
+            '/category/{slug}' => ['view' => 'category', 'layout' => ['title' => '物料品类', 'active' => 'search']],
             '/p/{id}' => ['view' => 'detail', 'layout' => ['title' => '物料详情', 'active' => 'search']],
             '/bom' => ['view' => 'bom', 'layout' => ['title' => 'BOM 配单', 'active' => 'bom']],
             '/bom/{id}' => ['view' => 'quote', 'layout' => ['title' => '匹配与报价', 'active' => 'bom']],
@@ -723,6 +724,10 @@ final class CuiRouter
             $data = array_merge($route['data'] ?? [], $params);
             if (($route['view'] ?? '') === 'search') {
                 $data['q'] = (string) ($_GET['q'] ?? '');
+            }
+            if (($route['view'] ?? '') === 'category' && MaterialCategory::find((string) ($params['slug'] ?? '')) === null) {
+                CuiPage::notFound('品类不存在');
+                return;
             }
             CuiPage::render((string) $route['view'], $data, (array) ($route['layout'] ?? []));
             return;

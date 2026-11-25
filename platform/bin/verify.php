@@ -88,10 +88,12 @@ $required = [
     'app/Repository/PdoMaterialImageRepository.php',
     'app/Repository/PdoSandboxPaymentRepository.php',
     'app/Repository/PdoCommissionRuleRepository.php',
+    'app/Repository/PdoCategoryCatalogRepository.php',
     'app/Repository/ApiTokenRepository.php',
     'app/Repository/OrderRepository.php',
     'app/Repository/PdoOrderRepository.php',
     'database/dev-schema.sql',
+    'database/014_category_catalog.sql',
     'bin/dev-db.php',
     'app/Storage/Storage.php',
     'app/Storage/LocalStorage.php',
@@ -101,6 +103,7 @@ $required = [
     'app/Storage/BomUploadService.php',
     'framework/components/CuiFileDrop.php',
     'config/database.php',
+    'config/category-pages.php',
     'bin/db-check.php',
     'app/Data/DemoData.php',
     'app/Domain/StateMachine.php',
@@ -116,6 +119,7 @@ $required = [
     'app/Domain/ReviewPolicy.php',
     'app/Domain/CreditHistory.php',
     'app/Domain/FieldMapping.php',
+    'app/Domain/MaterialCategory.php',
     'app/Domain/CommissionCalculator.php',
     'app/Domain/PaymentService.php',
     'app/Domain/LedgerService.php',
@@ -159,6 +163,7 @@ $required = [
     'tests/field-mapping.php',
     'tests/payment-sandbox.php',
     'tests/commission.php',
+    'tests/category-pages.php',
     'tests/api-auth.php',
     'tests/a11y.php',
     'tests/migration-extended.php',
@@ -207,6 +212,7 @@ $required = [
     'views/pages/seller-images.php',
     'views/pages/admin-payments.php',
     'views/pages/admin-commission.php',
+    'views/pages/category.php',
     'views/pages/admin-api-tokens.php',
     'views/pages/login.php',
     'views/pages/error.php',
@@ -256,6 +262,8 @@ $required = [
     'docs/FIELD-MAPPING.md',
     'docs/PAYMENT-SANDBOX.md',
     'docs/COMMISSION.md',
+    'docs/CATEGORY-PAGES.md',
+    'docs/CATEGORY-TASK-QUEUE.md',
     'docs/API-AUTH.md',
     'docs/A11Y-PERF.md',
     'docs/BACKUP.md',
@@ -312,7 +320,7 @@ $phpCount > 0 ? ok('扫描 PHP 文件', (string) $phpCount) : bad('扫描 PHP �
 
 // 4. 类与组件
 echo '[4/7] 类与组件' . PHP_EOL;
-$classes = ['Cui', 'CuiHtml', 'CuiTheme', 'CuiIcon', 'CuiLayout', 'CuiPage', 'CuiHeader', 'CuiSidebar', 'CuiBottomNav', 'CuiButton', 'CuiBadge', 'CuiCard', 'CuiStat', 'CuiChips', 'CuiBreadcrumb', 'CuiPageHeader', 'CuiField', 'CuiTable', 'CuiEmpty', 'CuiProductCard', 'CuiMatchCard', 'CuiStepper', 'CuiUploader', 'CuiQcItem', 'CuiKpi', 'CuiRouter', 'DemoData', 'StateMachine', 'Pricing', 'BomMatcher', 'Api', 'Database', 'MaterialRepository', 'DemoMaterialRepository', 'Auth', 'Rbac', 'BomCsvParser', 'Storage', 'LocalStorage', 'BomUploadService', 'CuiFileDrop', 'PdoMaterialRepository', 'PdoListingRepository', 'PdoListingWriter', 'PdoListingReview', 'PdoSellerListingRepository', 'CatalogRepositoryFactory', 'OrderService', 'SettlementService', 'OrderStore', 'OrderPresenter', 'CatalogDetailPresenter', 'PaymentService', 'LedgerService', 'OrderRepository', 'PdoOrderRepository', 'PaymentCallbackService', 'IdempotencyStore', 'ReconciliationService', 'SqlMigrationInspector', 'MigrationRunner', 'PdoAuthRepository', 'LoginThrottle', 'CreditScoring', 'PdoReviewRepository', 'PdoCreditRepository', 'PdoStoreRepository', 'PdoCommerceRepository', 'ReviewPolicy', 'CreditHistory', 'PdoMerchantKycRepository', 'ImageStorage', 'LocalImageStorage', 'ImageUploadService', 'PdoMaterialImageRepository', 'MerchantContext', 'FieldMapping', 'PdoSandboxPaymentRepository', 'CommissionCalculator', 'PdoCommissionRuleRepository', 'ApiAuth', 'ApiRateLimiter', 'ApiTokenRepository', 'ApiAuthException'];
+$classes = ['Cui', 'CuiHtml', 'CuiTheme', 'CuiIcon', 'CuiLayout', 'CuiPage', 'CuiHeader', 'CuiSidebar', 'CuiBottomNav', 'CuiButton', 'CuiBadge', 'CuiCard', 'CuiStat', 'CuiChips', 'CuiBreadcrumb', 'CuiPageHeader', 'CuiField', 'CuiTable', 'CuiEmpty', 'CuiProductCard', 'CuiMatchCard', 'CuiStepper', 'CuiUploader', 'CuiQcItem', 'CuiKpi', 'CuiRouter', 'DemoData', 'StateMachine', 'Pricing', 'BomMatcher', 'Api', 'Database', 'MaterialRepository', 'DemoMaterialRepository', 'Auth', 'Rbac', 'BomCsvParser', 'Storage', 'LocalStorage', 'BomUploadService', 'CuiFileDrop', 'PdoMaterialRepository', 'PdoListingRepository', 'PdoListingWriter', 'PdoListingReview', 'PdoSellerListingRepository', 'CatalogRepositoryFactory', 'OrderService', 'SettlementService', 'OrderStore', 'OrderPresenter', 'CatalogDetailPresenter', 'PaymentService', 'LedgerService', 'OrderRepository', 'PdoOrderRepository', 'PaymentCallbackService', 'IdempotencyStore', 'ReconciliationService', 'SqlMigrationInspector', 'MigrationRunner', 'PdoAuthRepository', 'LoginThrottle', 'CreditScoring', 'PdoReviewRepository', 'PdoCreditRepository', 'PdoStoreRepository', 'PdoCommerceRepository', 'ReviewPolicy', 'CreditHistory', 'PdoMerchantKycRepository', 'ImageStorage', 'LocalImageStorage', 'ImageUploadService', 'PdoMaterialImageRepository', 'MerchantContext', 'FieldMapping', 'PdoSandboxPaymentRepository', 'CommissionCalculator', 'PdoCommissionRuleRepository', 'MaterialCategory', 'PdoCategoryCatalogRepository', 'ApiAuth', 'ApiRateLimiter', 'ApiTokenRepository', 'ApiAuthException'];
 foreach ($classes as $class) {
     $exists = in_array($class, ['MaterialRepository', 'Storage', 'ImageStorage', 'OrderRepository'], true) ? interface_exists($class) : class_exists($class);
     $exists ? ok('class ' . $class) : bad('class ' . $class);
@@ -330,7 +338,7 @@ $escaped = CuiHtml::e('<script>alert(1)</script>');
 // 5. 路由渲染（CLI 捕获 HTML）
 echo '[5/7] 路由渲染' . PHP_EOL;
 $routes = [
-    '/', '/search', '/p/p1', '/bom', '/bom/B-1',
+    '/', '/search', '/category/resistor', '/p/p1', '/bom', '/bom/B-1',
     '/orders/SO-20261124-0081', '/seller', '/seller/listings/new',
     '/qc/QC-20261124-018', '/ops/pick/P-1024', '/pda', '/admin/orders',
     '/seller/settlements', '/ui', '/trace', '/login', '/shops', '/shop/hqb-industrial', '/admin/credits',

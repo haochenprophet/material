@@ -21,6 +21,7 @@ final class PdoListingRepository implements MaterialRepository
                 LEFT JOIN warehouse w ON w.id = l.warehouse_id
                 LEFT JOIN location loc ON loc.id = l.location_id
                 WHERE l.status = \'listed\' AND l.deleted_at IS NULL AND m.deleted_at IS NULL
+                  AND m.category_key IS NULL
                 ORDER BY l.id DESC';
         return array_map([$this, 'map'], $this->pdo->query($sql)->fetchAll() ?: []);
     }

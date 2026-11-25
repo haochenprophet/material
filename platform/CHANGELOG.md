@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.59.0 — 2026-11-25
+
+### Added
+- 学习 `hardware.sql`（25,270 行 / 13 Part Type），建立 13 品类页与立创风格子类。
+- 首页搜索框上方 13 品类 hub；`/category/{slug}` 支持商家/价格/交期/参数筛选。
+- 104 条 legacy 样本材料/报价；fixture 与 seed 脚本。
+- 500 条 `CATEGORY-TASK-QUEUE`；`tests/category-pages.php` 15 条。
+
 ## 0.58.2 — 2026-11-25
 
 ### Removed
