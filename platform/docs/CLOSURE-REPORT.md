@@ -83,7 +83,7 @@
 | 检查 | 结果 |
 |---|---|
 | `php -l` 全部 PHP | 0 failure |
-| `php bin/verify.php` | PASS 356 / FAIL 0 / WARN 0 |
+| `php bin/verify.php` | PASS 355 / FAIL 0 / WARN 0 |
 | `php tests/run.php` | PASS 31 / FAIL 0 |
 | `php tests/api.php` | PASS 23 / FAIL 0 |
 | `php tests/db.php` | PASS 7 / FAIL 0 |

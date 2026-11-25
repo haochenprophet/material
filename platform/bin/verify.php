@@ -94,7 +94,6 @@ $required = [
     'app/Repository/PdoOrderRepository.php',
     'database/dev-schema.sql',
     'database/014_category_catalog.sql',
-    'database/fixtures/category-samples.json',
     'bin/dev-db.php',
     'app/Storage/Storage.php',
     'app/Storage/LocalStorage.php',

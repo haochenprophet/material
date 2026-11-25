@@ -26,7 +26,7 @@ php platform/bin/release-check.php
 
 关键数据：
 
-- `verify.php` 356 PASS / 0 FAIL
+- `verify.php` 355 PASS / 0 FAIL
 - 48 个测试文件全部 PASS
 - `mats_platform_next2` 92 表/种子
 - 旧 `materiel` 13 表/0 行
