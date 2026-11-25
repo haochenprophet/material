@@ -31,7 +31,7 @@ php platform/bin/release-check.php
 - `mats_platform_next2` 92 表/种子
 - 旧 `materiel` 13 表/0 行
 - `mats_platform_next` 部分迁移现场保留
-- 当前 release：v0.58.0（git tag；`RELEASE` 形如 `git-ai-v0.58.0`）
+- 当前 release：v0.58.1（git tag；`RELEASE` 形如 `git-ai-v0.58.1`）
 - 旁路启动 8099：`/health` `/` `/bom` `/p/p1` `/trace` 200；`/pda` `/admin/listings` 未登录 302\n- QC 登录 8099 `/pda` 200，`layout-pda`
 - 旧代码完整性：`docs/GIT-INTEGRITY.md`（tracked 仅会话前已有 crdownload 删除）
 

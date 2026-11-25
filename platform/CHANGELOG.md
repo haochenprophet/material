@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.58.1 — 2026-11-25
+
+### Fixed
+- 统一 CLOSURE/TASK-QUEUE/ACCEPTANCE 的最终版本为 v0.58.1。
+
 ## 0.58.0 — 2026-11-25
 
 ### Changed
