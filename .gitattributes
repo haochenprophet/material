@@ -1,0 +1,16 @@
+# 全仓库文件类型约束
+# 只声明二进制类型；不强制行尾，避免历史文件被批量重写。
+*.pdf binary
+*.mhtml binary
+*.gif binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.zip binary
+*.7z binary
+*.rar binary
+*.sqlite binary
+*.sqlite3 binary
+*.db binary
