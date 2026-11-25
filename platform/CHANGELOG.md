@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.58.2 — 2026-11-25
+
+### Removed
+- 删除 108 个历史 `platform/releases/` 代码副本；版本回溯改用 git tag/commit。
+- `.gitignore` 不再忽略 `releases/`（目录已不存在，防止重新生成副本被隐藏）。
+- 文档同步：ROLLBACK/GIT-WORKFLOW/RELEASE-CHECKLIST。
+
 ## 0.58.1 — 2026-11-25
 
 ### Fixed

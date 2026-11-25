@@ -1,9 +1,9 @@
 {
     "app": "物格云 MaterialGrid",
-    "version": "0.58.1",
-    "release": "git-ai-test-v0.58.1",
+    "version": "0.58.2",
+    "release": "git-ai-test-v0.58.2",
     "branch": "ai-test",
-    "generated_at": "2026-11-25T10:37:07+08:00",
+    "generated_at": "2026-11-25T10:40:50+08:00",
     "php": "8.4.3",
     "files": {
         ".env.example": {
@@ -12,14 +12,14 @@
             "mtime": "2026-11-24T18:50:21+08:00"
         },
         ".gitignore": {
-            "size": 97,
-            "sha256": "346f7869f53e438d37d33e66ee4681fae6c756980e35fa8d99d028a1bcc4a321",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "size": 86,
+            "sha256": "f394fec6ae1481e2401245dc6b9b2581e8962949ba86a84224c9e6435b1dea84",
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "CHANGELOG.md": {
-            "size": 18100,
-            "sha256": "4bb2f8d94174caa704fd345d8748bee95a53d3e4e8c8a4ea4f4791e04aeb037a",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "size": 18398,
+            "sha256": "69fdc15a3c5b32e9c86044514e0eaa63c6f1d614d2a123362477f8034a82002f",
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "README.md": {
             "size": 2931,
@@ -28,8 +28,8 @@
         },
         "VERSION": {
             "size": 8,
-            "sha256": "c1d04ea1f88df653c7cb6b3880146116133f55d48fd2b040506c8d35fb88b262",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "sha256": "448ad974d97f801786efbf8f07e547775070ed12278f40b03f2a61751f5dbf12",
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "app/Api.php": {
             "size": 7697,
@@ -394,22 +394,22 @@
         "bin/seed-api-token.php": {
             "size": 473,
             "sha256": "d70c3e22aafde90d0e0fc13e073dff4a9340a069c107e14fce492a18c9119772",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "bin/seed-auth.php": {
             "size": 2205,
             "sha256": "813465c703702a0a18144e4559a6a7138ddcfada2841cb238ed1a10e7be23a68",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "bin/seed-commission.php": {
             "size": 1082,
             "sha256": "14f959894068e9f43bf19c21991de4530b67608a05907d528a82d05b73b2cfa6",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "bin/seed-reputation.php": {
             "size": 13000,
             "sha256": "2c3d7f8e2f2516b168e15c8a2c124aee52c36829f2ebc3e73853d057a3ee0507",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "bin/snapshot.php": {
             "size": 2582,
@@ -583,8 +583,8 @@
         },
         "docs/ACCEPTANCE.md": {
             "size": 2964,
-            "sha256": "a99df4d362ebe59f35629d08df1acb915fde82fd17c85459dc395eef0e198e34",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "sha256": "78deb29f06b6e41faf86bb7623d130da6447b995a1ab438d733751f779921542",
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "docs/API-AUTH.md": {
             "size": 958,
@@ -609,7 +609,7 @@
         "docs/BASELINE.md": {
             "size": 3242,
             "sha256": "17197ad1533ba896a201848f23d94963731354d18b1a35265ede9c17803020ab",
-            "mtime": "2026-11-24T18:40:44+08:00"
+            "mtime": "2026-11-25T10:40:34+08:00"
         },
         "docs/BOM-PARSER.md": {
             "size": 1660,
@@ -619,7 +619,7 @@
         "docs/BRANCHES.md": {
             "size": 1286,
             "sha256": "bfa42a7818149c8a5fe1b8e324adc5168b2eeaf1424ac98f8b1a75815f64e52a",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "docs/BUSINESS-ALIGNMENT.md": {
             "size": 4373,
@@ -638,8 +638,8 @@
         },
         "docs/CLOSURE-REPORT.md": {
             "size": 10058,
-            "sha256": "29462bc3d68e8f0b7d695781443018a14019aea43a379af059522ee3c0ec2890",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "sha256": "d3598ddd4c131000df49dea2f1aa6fb90cd11197673ef61bb0c79ad36f12904b",
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "docs/CODE-MAP.md": {
             "size": 3391,
@@ -687,9 +687,9 @@
             "mtime": "2026-11-24T19:48:04+08:00"
         },
         "docs/GIT-WORKFLOW.md": {
-            "size": 1877,
-            "sha256": "1e7770b356f47dba0a47376e43f90f771bb48df681a1565c89da9f0bd473c54d",
-            "mtime": "2026-11-25T10:36:17+08:00"
+            "size": 1902,
+            "sha256": "12ae66ef1ecf5b3a7b1f3e621fa6f59285370e9566ddb75a3ecb690401912da8",
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "docs/IMAGE-UPLOAD.md": {
             "size": 1087,
@@ -752,9 +752,9 @@
             "mtime": "2026-11-25T10:23:42+08:00"
         },
         "docs/RELEASE-CHECKLIST.md": {
-            "size": 1568,
-            "sha256": "ce93de228add2df38cb5a2fbfb36184a4da99764f0b82480645b214755d471d2",
-            "mtime": "2026-11-25T10:36:17+08:00"
+            "size": 1602,
+            "sha256": "1b2c2174a453a606e057a66f1c2f3de597d184ea1213e5c5241b2e6c7275a364",
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "docs/REPUTATION-PLAN.md": {
             "size": 3155,
@@ -787,9 +787,9 @@
             "mtime": "2026-11-24T19:46:29+08:00"
         },
         "docs/TASK-QUEUE.md": {
-            "size": 3286,
-            "sha256": "f375cd6d238975b1f0b688a4812355dffa87ddf1172742c512fca628318c418f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "size": 3329,
+            "sha256": "af67890f574dba7ee8329717f1c87b1138c0129d60026d45824903008f807861",
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "docs/TEST-MATRIX.md": {
             "size": 4089,
@@ -959,47 +959,47 @@
         "public/assets/img/materials/m1.svg": {
             "size": 872,
             "sha256": "f49679e4d15f04487cf39201137068cd6800a142f545934a760f02bc6275b41d",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/img/materials/m2.svg": {
             "size": 864,
             "sha256": "fb8c4d8bcfce72a594b39677a1903ac0e7614b624712fddffce2c3078e9ddfa4",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/img/materials/m3.svg": {
             "size": 867,
             "sha256": "84c991d6f51650db1fa660b8a5cfa84ee44a7d5788e00c4011f2e18177572b04",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/img/materials/m4.svg": {
             "size": 868,
             "sha256": "13e127b988d868737e2e896591d7048f75999961315a4ae84080faa22f6afe11",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/img/materials/m5.svg": {
             "size": 867,
             "sha256": "4723500295745a7b5df1d5009b9cb5449a575d46be7282265a9fb77b4d6ed628",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/img/materials/m6.svg": {
             "size": 859,
             "sha256": "3ea0c115e6b8139685ff7c0a1c4f34ce80bc874a36547181979eef9a7a4a9743",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/img/materials/m7.svg": {
             "size": 865,
             "sha256": "73f7f3eac63c63f31d393798cd9d84a665ca4b53a695939f79c3695587c8fc0f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/img/merchants/hqb.svg": {
             "size": 533,
             "sha256": "f08df03d26a8bfddf4e3acea042d82fefac7990275b278ce593c8bcf68996c21",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/img/merchants/suzhou.svg": {
             "size": 532,
             "sha256": "d47fbae30b12f3fa8a40ee3141a6a2fe38ddbcafb2e95bb04283fffca27d56f1",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "public/assets/js/app.js": {
             "size": 3822,
@@ -1024,237 +1024,237 @@
         "tests/a11y.php": {
             "size": 1725,
             "sha256": "e52d053949247291c29cc5774fa570fa41317b803b300cbf1db9de62b1d83cd5",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/api-auth.php": {
             "size": 2546,
             "sha256": "28d0ad1437a4e797d5eb2afdd75e69b57e537ef85d94a2d01a3b9c9271ca3efe",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/api.php": {
             "size": 5233,
             "sha256": "f0eec45bc5eafeeb03b0bf7bb2f38cb09d73186b6c653e09feeae2834c85082e",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/auth-db-live.php": {
             "size": 1795,
             "sha256": "754df58931f54d5df181397b60c9cdc0424975e2a78fa84cbe55ef2709be7e0c",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/auth-db.php": {
             "size": 2734,
             "sha256": "b6298cc1660bb9dba752c1358ea5072fe732140f05fc6a528cce59b3b91f7f7c",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/auth.php": {
             "size": 2448,
             "sha256": "797547343df06d13fb940f042be83d87a9fa67e5d49ab8ae94c2bcdec84f068b",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/bom.php": {
             "size": 2307,
             "sha256": "c6affcf8f12a4ca40dcdd901a86c4a1677ac82c5224cfc08d9b5981bc89841c1",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/catalog-detail.php": {
             "size": 1514,
             "sha256": "c38b3ad8428fe075c034bb4939c11a7601db3a652478e86df8740f04712a70f8",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/catalog-source.php": {
             "size": 1469,
             "sha256": "07b734c334be2baa4226ea2685049b0baea9a6670c6e798c36a928846e49131a",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/comment-tree.php": {
             "size": 2907,
             "sha256": "1e16ebf5e6119fa9eb68c935d922a68aa979a6e66a5e06856d9daa5c739c5fc9",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/commission.php": {
             "size": 2892,
             "sha256": "614d1a1634d5fa1fa47ce9d94c455a87885bef5b61a92d3da9f1578976d3cbee",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/credit-history.php": {
             "size": 1486,
             "sha256": "3b0671bf4bd621d65135f887b16d8782580b569858d5c6a9789cc905a332a12e",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/credit.php": {
             "size": 2488,
             "sha256": "26dd036b386baa167779f045132a9a8724840833501a8305d12b344ad16c9b95",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/data-isolation.php": {
             "size": 2196,
             "sha256": "28ad2c7bc368d6fb9314e5ebd3cb496fce7137c50cea094df5629de9414fa811",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/db-live.php": {
             "size": 2390,
             "sha256": "f1ad289cbb3e2024b0906340ac99fcc7e53b611880badb8332d2db0178320d53",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/db.php": {
             "size": 1501,
             "sha256": "9e6d8bebe96e87b6f18dd1e28ab539c8914809c7cd86f4b24d7aa932b232a2c4",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/deploy.php": {
             "size": 2171,
             "sha256": "75a21a96ca81346089cb208499370ff5128dfd455fe00cb7cf5046b8e83859ef",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/e2e.php": {
             "size": 6158,
             "sha256": "1c4187469d2737ed1be738a248bb74665baabc6952674298c3dc604d6997bf2f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/field-mapping.php": {
             "size": 1544,
             "sha256": "1e6cb2fbdac632c2af9d3febc474b8adf1f651d406cf577e6466714d6053ec64",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/finance.php": {
             "size": 3657,
             "sha256": "cc4d8c9a1f0780ff72712fa48cf6e413baa70025e18d6af173514d8b48b7cfd0",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/image-upload.php": {
             "size": 2748,
             "sha256": "58e6565eba418bd5005c735df989f5973ebeeff84386478a525aa1d760defa8f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/listing-repo-live.php": {
             "size": 2105,
             "sha256": "480bb16cc7a039b6dc22f8d191f47ad8121471c19f072d40004273e3d1684d1b",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/listing-repo.php": {
             "size": 2657,
             "sha256": "f98b617390d2691340202eb0ffca983b0bccd9a88815e5ba5fbc19f92283e213",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/listing-review.php": {
             "size": 3107,
             "sha256": "a7f982c788f89cbb73a95b71c0657a38c03081a50b0d0ebbc17481c553bebedb",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/listing-writer.php": {
             "size": 4073,
             "sha256": "bbc2f1914d6b21e2ae831e061ea67506c2d803829dae82f30a2e6ec53f2a1ed2",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/merchant-kyc.php": {
             "size": 2599,
             "sha256": "d5fb6bae56f3ba0a47008e5e162ad36db06915a76aa14c02b7465162b324841e",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/migration-extended.php": {
             "size": 1640,
             "sha256": "67d01bfe9223495d6fabc81c5c0a92baf669576191e1e957c2f1de2dc56f567f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/migration-runner.php": {
             "size": 2362,
             "sha256": "415b0ecb1579e5f6bc09de9027fff63aa4ad2a5ac7c56b87b877e63b9028b23f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/migration.php": {
             "size": 2479,
             "sha256": "719b37b90077e33472528d206ec0b62125757038aab74220e6bea960b27cd681",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/order-presenter.php": {
             "size": 1884,
             "sha256": "086e80dbd48961fdba060f1f639be5e264e1047f808e9bc924e7fe1f22f5d92b",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/order-repo.php": {
             "size": 2273,
             "sha256": "364eed832f0f091a97c46fed863b90a3a9764023fd84683a434e1c8caac6a53f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/payment-callback.php": {
             "size": 4269,
             "sha256": "af4986fab0a396f8ca4afc6a5dd9ded5f7b2bc851c9f773cf14f1a68b64d5fe0",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/payment-sandbox.php": {
             "size": 2759,
             "sha256": "7ca78c1313e5f70acbf7e184d7a4b1309f94ebc15093e1aeb729cc4ededb5cf1",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/pdo.php": {
             "size": 2088,
             "sha256": "31ada900941aa64fe33d64f34efb506c4057b47635df3fe5bfffb813abfcbc3f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/perf.php": {
             "size": 1706,
             "sha256": "4d8885d3a59783b75a68587d62dc90d6921e1c8426964a6a3044baaab7a1a43d",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/regression.php": {
             "size": 3501,
             "sha256": "6b8740b29fef28729b94b9fa94bcdb81accccbf224cc7fc004d4860d405fbe41",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/reputation-live.php": {
             "size": 3481,
             "sha256": "efd4d8460d439c2bcd0cb3d60468cd7e74bfb655f1e8f957205deeadef2ec4ad",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/review-moderation.php": {
             "size": 2762,
             "sha256": "7a7f9f238d0b2c3e63a36dfcdca206c103212b2af2dfb68c5a54785c5806214b",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/review-policy.php": {
             "size": 1393,
             "sha256": "f693009872419a8ae39c60387dbebd4c8ef104414d1c159a834e6a2ed845a8cc",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/review-reply.php": {
             "size": 2030,
             "sha256": "e766064ac5ff5c1d7212614eb6924aa8613a2b1d130373f54868bc7ddb4d633f",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/run.php": {
             "size": 4887,
             "sha256": "6d8986cbab72ea470832115a25506d2df63a50c8f0e2908460699108a0d9d9d2",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/security.php": {
             "size": 2473,
             "sha256": "19757ace82fdcc4d92d70212d481cf9eac21d5131a034710f239fe19b6fc4871",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/seller-listings.php": {
             "size": 2247,
             "sha256": "2d80be08180e3c0cc3d3a18914c6f2a6c48eccb1de402eeb452e707e425ebd29",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/storefront.php": {
             "size": 3463,
             "sha256": "e53638baf6dd983853679fc0905f235d035fb412b44dcb73044918acd36fe2d6",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/throttle.php": {
             "size": 1794,
             "sha256": "3dd1d8272c7a6bfea16cb4e04a7673fc412338160e5d342044cfa5702c319334",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/trade.php": {
             "size": 3144,
             "sha256": "0a9741a267b07239d4c277998a84e05644999dfbc76e33de3fccf04c8fdb62ad",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "tests/upload.php": {
             "size": 3093,
             "sha256": "aaae079d2eeea847ccf4bebba8682c602ad678f6aad0f450404bdbc95f8336bf",
-            "mtime": "2026-11-25T10:37:07+08:00"
+            "mtime": "2026-11-25T10:40:45+08:00"
         },
         "views/pages/admin-api-tokens.php": {
             "size": 2901,
