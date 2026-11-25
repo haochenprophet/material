@@ -3,6 +3,35 @@ declare(strict_types=1);
 /** @var array<int, array<string, mixed>> $products */
 $products = CatalogRepositoryFactory::make()->all();
 
+$categories = MaterialCategory::all();
+$categoryTotal = array_sum(array_map(static fn (array $c): int => (int) $c['count'], $categories));
+
+echo '<section class="cat-hub" id="categories">';
+echo '<div class="cat-hub-head"><div><span class="cat-kicker">品类寻料 · CATEGORY HUB</span><h2>按品类快速找料</h2><p>13 个物料大类，覆盖 25,270 条旧库样本；按商家、价格、交期、参数快速缩小范围。</p></div><a class="link" href="' . Cui::url('/search') . '">全站搜索 →</a></div>';
+echo '<div class="cat-hub-grid">';
+foreach ($categories as $key => $c) {
+    echo '<a class="cat-hub-card" href="' . Cui::url('/category/' . rawurlencode((string) $key)) . '" style="--cat:' . CuiHtml::e($c['color']) . ';--cat-soft:' . CuiHtml::e($c['soft']) . '">';
+    echo '<span class="cat-hub-icon">' . Cui::icon((string) $c['icon']) . '</span>';
+    echo '<span class="cat-hub-name">' . CuiHtml::e((string) $c['name']) . '</span>';
+    echo '<span class="cat-hub-en">' . CuiHtml::e((string) $c['en']) . '</span>';
+    echo '<span class="cat-hub-count">' . number_format((int) $c['count']) . ' <i>样本</i></span>';
+    echo '<span class="cat-hub-tagline">' . CuiHtml::e((string) $c['tagline']) . '</span>';
+    echo '<span class="cat-hub-subs">';
+    foreach (array_slice($c['subs'], 0, 3) as $sn) {
+        echo '<i>' . CuiHtml::e((string) $sn) . '</i>';
+    }
+    echo '</span></a>';
+}
+echo '</div>';
+echo '<form class="cat-hub-search" action="' . Cui::url('/search') . '" method="get" role="search">';
+echo '<span class="hub-search-icon">' . Cui::icon('search') . '</span>';
+echo '<label class="sr-only" for="hub-q">搜索物料</label>';
+echo '<input id="hub-q" type="search" name="q" placeholder="输入型号 / 品牌 / 封装 / 参数，例如：STM32、0402、TVS、DDR">';
+echo '<button class="btn btn-primary" type="submit">搜全站</button>';
+echo '</form>';
+echo '<div class="cat-hub-foot"><span><b>' . count($categories) . '</b> 个品类</span><span><b>' . number_format($categoryTotal) . '</b> 条旧库样本</span><span>价格为演示参考 · 支持 BOM 配单</span></div>';
+echo '</section>';
+
 echo CuiPageHeader::render([
     'title' => '找料，不再靠猜',
     'subtitle' => '检测过、可追溯、可寄售的电子物料；上传 BOM，30 分钟出报价。',

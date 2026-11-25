@@ -1,0 +1,1022 @@
+{
+    "source": "material/database/hardware.sql",
+    "source_table": "Greatwall CIS",
+    "generated_at": "2026-11-25T11:25:43+08:00",
+    "total_rows": 25267,
+    "categories": {
+        "resistor": {
+            "key": "resistor",
+            "legacy_count": 4454,
+            "samples": [
+                {
+                    "part_number": "10001-00030200",
+                    "component_name": "VR 2K OHM B TAPER 10%",
+                    "description": "[HF]ALPH/RD901F-20E1-10F-B2K-00D04",
+                    "value": "2KOhm",
+                    "package": "DIP",
+                    "subcategory_key": "potentiometer",
+                    "subcategory_name": "电位器"
+                },
+                {
+                    "part_number": "10002-00010000",
+                    "component_name": "THERMISTOR 470K OHM (0402) 5%",
+                    "description": "[HF]MITSUBISHI/TH05-4K474JR",
+                    "value": "470KOHM",
+                    "package": "SMD",
+                    "subcategory_key": "thermistor",
+                    "subcategory_name": "热敏电阻"
+                },
+                {
+                    "part_number": "10003-00010000",
+                    "component_name": "CHIP ATT. 50 OHM 2DB +-0.3DB",
+                    "description": "[HF]YAGEO/ATV321CR-072DBL",
+                    "value": "50OHM",
+                    "package": "SMD",
+                    "subcategory_key": "chip_resistor",
+                    "subcategory_name": "贴片电阻"
+                },
+                {
+                    "part_number": "10001-00090000",
+                    "component_name": "VR 20K OHM B TAPER 10%",
+                    "description": "[HF]ALPHA/RD901F-20E1-10F-B20K-00D",
+                    "value": "VR_3P",
+                    "package": "DIP",
+                    "subcategory_key": "potentiometer",
+                    "subcategory_name": "电位器"
+                },
+                {
+                    "part_number": "10001-00100000",
+                    "component_name": "VR 1K OHM B TAPER 10%",
+                    "description": "[GA]ALPH/RD901F-20E1-10F-B1K-00DH1",
+                    "value": "1KOHM",
+                    "package": "DIP",
+                    "subcategory_key": "potentiometer",
+                    "subcategory_name": "电位器"
+                },
+                {
+                    "part_number": "10002-00020200",
+                    "component_name": "THERMISTOR 10K OHM (0402) 3%",
+                    "description": "PANASONIC/ERTJ0ER103H",
+                    "value": "10KOHM",
+                    "package": "SMD",
+                    "subcategory_key": "thermistor",
+                    "subcategory_name": "热敏电阻"
+                },
+                {
+                    "part_number": "10002-00030000",
+                    "component_name": "THERMISTOR 10K OHM (0603) 3%",
+                    "description": "[HF]TKS/TSM1B103H3381RZ",
+                    "value": "10KOHM",
+                    "package": "SMD",
+                    "subcategory_key": "thermistor",
+                    "subcategory_name": "热敏电阻"
+                },
+                {
+                    "part_number": "10002-00070100",
+                    "component_name": "THERMISTOR 100K OHM (0402) 1%",
+                    "description": "[HF]TKS/TSM0B104F4251RZ",
+                    "value": "100kOhm",
+                    "package": "SMD",
+                    "subcategory_key": "thermistor",
+                    "subcategory_name": "热敏电阻"
+                }
+            ]
+        },
+        "capacitor": {
+            "key": "capacitor",
+            "legacy_count": 1904,
+            "samples": [
+                {
+                    "part_number": "11012-0004A000",
+                    "component_name": "CAP EL 33UF/25V 4.5*6.6 20%",
+                    "description": "[HF]PANASONIC/EEEHS1E330L",
+                    "value": "33UF/25V",
+                    "package": "SMD",
+                    "subcategory_key": "aluminum",
+                    "subcategory_name": "铝电解"
+                },
+                {
+                    "part_number": "11020-00010000",
+                    "component_name": "POSCAP 22UF/25V (7343/D) 20%",
+                    "description": "[HF    ]SANYO/25TQC22MV",
+                    "value": "22UF/25V",
+                    "package": "SMD",
+                    "subcategory_key": "tantalum",
+                    "subcategory_name": "钽/聚合物"
+                },
+                {
+                    "part_number": "11020-00015000",
+                    "component_name": "CAP PL 22UF/25V (7343/D) 20%",
+                    "description": "[HF]PANASONIC/EEFCT1E220R",
+                    "value": "22UF/25V",
+                    "package": "SMD",
+                    "subcategory_key": "mlcc",
+                    "subcategory_name": "MLCC 陶瓷"
+                },
+                {
+                    "part_number": "11202-00117000",
+                    "component_name": "MLCC 220PF/25V (0201) X5R 10%",
+                    "description": "[HE]WALSIN/0201X221K250CT",
+                    "value": "220PF/25V",
+                    "package": "SMD",
+                    "subcategory_key": "safety",
+                    "subcategory_name": "安规电容"
+                },
+                {
+                    "part_number": "11012-0009X000",
+                    "component_name": "CAP EL 220UF/6.3V 6.3*5.5 20%",
+                    "description": "[HE]CAPXON/ZV221M6R3E055ETR",
+                    "value": "220UF/6.3V",
+                    "package": "SMD",
+                    "subcategory_key": "aluminum",
+                    "subcategory_name": "铝电解"
+                },
+                {
+                    "part_number": "11012-0010X000",
+                    "component_name": "CAP EL 220UF/16V 6.3*7.7 20%",
+                    "description": "[HF]CAPXON/ZV221M016E077ETR",
+                    "value": "220UF/16V",
+                    "package": "SMD",
+                    "subcategory_key": "aluminum",
+                    "subcategory_name": "铝电解"
+                },
+                {
+                    "part_number": "11G040133721",
+                    "component_name": "CAP EL 330UF/6.3V 6.3*7.7",
+                    "description": "[GA]SANYO/6CE330AX",
+                    "value": "330UF/6.3V",
+                    "package": "SMD",
+                    "subcategory_key": "aluminum",
+                    "subcategory_name": "铝电解"
+                },
+                {
+                    "part_number": "11G040222729",
+                    "component_name": "CAP EL 220UF/25V 6.3*11 DIP",
+                    "description": "[EL]RUBYCON/25PX220MZA1CR6.3X11",
+                    "value": "220UF/25V",
+                    "package": "DIP",
+                    "subcategory_key": "aluminum",
+                    "subcategory_name": "铝电解"
+                }
+            ]
+        },
+        "inductor": {
+            "key": "inductor",
+            "legacy_count": 1514,
+            "samples": [
+                {
+                    "part_number": "09002-00050000",
+                    "component_name": "FERRITE BEAD 470 OHM/175mA 25%",
+                    "description": "[HF]MURATA/BLM03HD471SN1D (0201)",
+                    "value": "470Ohm/100Mhz",
+                    "package": "SMD",
+                    "subcategory_key": "ferrite",
+                    "subcategory_name": "磁珠"
+                },
+                {
+                    "part_number": "09002-00200200",
+                    "component_name": "FB. (0201) 1000OHM/200mA 25%",
+                    "description": "[HE]MURATA/BLM03AX102SN1D",
+                    "value": "1000Ohm/100Mhz",
+                    "package": "SMD",
+                    "subcategory_key": "chip_inductor",
+                    "subcategory_name": "贴片电感"
+                },
+                {
+                    "part_number": "09016-00010300",
+                    "component_name": "POWER INDUCTOR 1UH/2.34A 20%",
+                    "description": "[HF]CYNTEC/PHT25201B-1R0MS",
+                    "value": "1UH",
+                    "package": "SMD",
+                    "subcategory_key": "power",
+                    "subcategory_name": "功率电感"
+                },
+                {
+                    "part_number": "09200-000100GW",
+                    "component_name": "TRANSFORMER/1000 BASE-T",
+                    "description": "CND-TEK/G2426S SMD 24P",
+                    "value": "G2426S",
+                    "package": "SMD",
+                    "subcategory_key": "transformer",
+                    "subcategory_name": "变压器"
+                },
+                {
+                    "part_number": "09002-00050200",
+                    "component_name": "FERRITE BEAD(0402)470OHM/200mA",
+                    "description": "[HF]MURATA/BLM15GG471SN1B",
+                    "value": "470OHM/100Mhz",
+                    "package": "SMD",
+                    "subcategory_key": "ferrite",
+                    "subcategory_name": "磁珠"
+                },
+                {
+                    "part_number": "09002-00050400",
+                    "component_name": "FERRITE BEAD(0603)470 OHM/0.5A",
+                    "description": "[HF]MURATA/BLM18EG471SN1D",
+                    "value": "470Ohm/100Mhz",
+                    "package": "SMD",
+                    "subcategory_key": "ferrite",
+                    "subcategory_name": "磁珠"
+                },
+                {
+                    "part_number": "09002-00050500",
+                    "component_name": "FERRITE BEAD(0603)470 OHM/0.2A",
+                    "description": "[HF]SPORTON/HCB1608C-471T02",
+                    "value": "470Ohm/100Mhz",
+                    "package": "SMD",
+                    "subcategory_key": "ferrite",
+                    "subcategory_name": "磁珠"
+                },
+                {
+                    "part_number": "09002-00070000",
+                    "component_name": "FERRITE BEAD(0201)600OHM/150mA",
+                    "description": "[HE]MURATA/BLM03HD601SN1D",
+                    "value": "600OHM/100MHz",
+                    "package": "SMD",
+                    "subcategory_key": "ferrite",
+                    "subcategory_name": "磁珠"
+                }
+            ]
+        },
+        "connector": {
+            "key": "connector",
+            "legacy_count": 5609,
+            "samples": [
+                {
+                    "part_number": "10001-00010100",
+                    "component_name": "VR 100K OHM A TYPE DIP 10%",
+                    "description": "[GA]ALPHA/RD902F-20-10F-A100K-0054",
+                    "value": "100KOHM",
+                    "package": "DIP",
+                    "subcategory_key": "other",
+                    "subcategory_name": "其他连接器"
+                },
+                {
+                    "part_number": "12001-00100100",
+                    "component_name": "MOBILE rPGA CPU SOCKET 947",
+                    "description": "[HE]FOXCONN/PZ94726-3641-41H",
+                    "value": "SOCKET947",
+                    "package": "SMD",
+                    "subcategory_key": "ic_socket",
+                    "subcategory_name": "IC/CPU 插座"
+                },
+                {
+                    "part_number": "12006-00010800",
+                    "component_name": "HEADER 2X3P 2.54 9.65H SMT",
+                    "description": "[GA]SAMTEC/TSM-103-01-S-DV-P-TR",
+                    "value": "HEADER_2X3P",
+                    "package": "SMD",
+                    "subcategory_key": "header",
+                    "subcategory_name": "排针/排母"
+                },
+                {
+                    "part_number": "12008-00010600",
+                    "component_name": "WAFER HD 4P 2.5MM R/A,DIP",
+                    "description": "[EL]ACES/88334-047N-1",
+                    "value": "WAFER_HD_4P",
+                    "package": "DIP",
+                    "subcategory_key": "wire_to_board",
+                    "subcategory_name": "线对板"
+                },
+                {
+                    "part_number": "12012-000100GW",
+                    "component_name": "USB2.0 CON 4P -2CH REV SUNK",
+                    "description": "TAI CHANG/CSTUA-0408-GKPD00",
+                    "value": "USB_CON_4P",
+                    "package": "",
+                    "subcategory_key": "usb",
+                    "subcategory_name": "USB"
+                },
+                {
+                    "part_number": "12014-00110000",
+                    "component_name": "MCX JACK 5P,DIP,75 OHM",
+                    "description": "[HF]ACON/RMX23-7T14002",
+                    "value": "TV_RF_CON_1P",
+                    "package": "DIP",
+                    "subcategory_key": "rf",
+                    "subcategory_name": "射频/同轴"
+                },
+                {
+                    "part_number": "12017-000200GW",
+                    "component_name": "WtoB CON 35P 0.5MM 1.5H R/A S/T LVDS",
+                    "description": "THD/THD0515-35CL-SN",
+                    "value": "FPC_CON_35P",
+                    "package": "",
+                    "subcategory_key": "fpc",
+                    "subcategory_name": "FPC/FFC"
+                },
+                {
+                    "part_number": "12020-00010900",
+                    "component_name": "BATT CON BTB 8P 2 0.9CH SUNK",
+                    "description": "[HF]ALLTOP/C144SW-K0839-L",
+                    "value": "BATT_CON_8P",
+                    "package": "DIP",
+                    "subcategory_key": "board_to_board",
+                    "subcategory_name": "板对板"
+                }
+            ]
+        },
+        "discrete": {
+            "key": "discrete",
+            "legacy_count": 1822,
+            "samples": [
+                {
+                    "part_number": "07001-00010000",
+                    "component_name": "DIODE SPLV2.8-4BTG SOIC-8",
+                    "description": "[HF]LITTELFUSE",
+                    "value": "SPLV2.8-4BTG",
+                    "package": "SMD",
+                    "subcategory_key": "diode",
+                    "subcategory_name": "二极管"
+                },
+                {
+                    "part_number": "07001-00030000",
+                    "component_name": "TVS DIODE ESDA05CP DFN1006",
+                    "description": "[HF]YEASN 5V 10PF",
+                    "value": "ESDA05CP",
+                    "package": "SMD",
+                    "subcategory_key": "tvs",
+                    "subcategory_name": "TVS/ESD"
+                },
+                {
+                    "part_number": "07003-00030100",
+                    "component_name": "TRASIS. PMBT3904M SOT883",
+                    "description": "[HE]NXP/PMBT3904M",
+                    "value": "PMBT3904M",
+                    "package": "SMD",
+                    "subcategory_key": "other",
+                    "subcategory_name": "其他分立"
+                },
+                {
+                    "part_number": "07003-00140000",
+                    "component_name": "TRANSISTOR STT818B SOT23-6L",
+                    "description": "[HF]ST",
+                    "value": "STT818B",
+                    "package": "SMD",
+                    "subcategory_key": "bjt",
+                    "subcategory_name": "三极管"
+                },
+                {
+                    "part_number": "07005-00010000",
+                    "component_name": "P-MOSFET APM2305BAC-TRG SOT23",
+                    "description": "[HF]ANPEC",
+                    "value": "APM2305BAC-TRG",
+                    "package": "SMD",
+                    "subcategory_key": "mosfet",
+                    "subcategory_name": "MOSFET"
+                },
+                {
+                    "part_number": "07001-00040100",
+                    "component_name": "DIODE BAR90-02EL TSLP-2-19",
+                    "description": "[HE]INFINEON",
+                    "value": "BAR90-02EL",
+                    "package": "SMD",
+                    "subcategory_key": "diode",
+                    "subcategory_name": "二极管"
+                },
+                {
+                    "part_number": "07001-00070000",
+                    "component_name": "DIODE BAT54SDW SOT-363",
+                    "description": "[HE]PANJIT",
+                    "value": "BAT54SDW",
+                    "package": "SMD",
+                    "subcategory_key": "diode",
+                    "subcategory_name": "二极管"
+                },
+                {
+                    "part_number": "07001-00100100",
+                    "component_name": "DIODE MMBD4148FN2",
+                    "description": "[HE]PANJIT DFN 2L",
+                    "value": "MMBD4148FN2",
+                    "package": "SMD",
+                    "subcategory_key": "diode",
+                    "subcategory_name": "二极管"
+                }
+            ]
+        },
+        "ic": {
+            "key": "ic",
+            "legacy_count": 2866,
+            "samples": [
+                {
+                    "part_number": "06001-00030000",
+                    "component_name": "RTC R2223L-E2",
+                    "description": "[HF]RICOH QFN018018-12",
+                    "value": "R2223L-E2",
+                    "package": "SMD",
+                    "subcategory_key": "clock",
+                    "subcategory_name": "时钟/RTC"
+                },
+                {
+                    "part_number": "06004-000100GW",
+                    "component_name": "LOGIC RS1G08 SC70-5",
+                    "description": "RUNIC/RS1G08XC5",
+                    "value": "RS1G08XC5",
+                    "package": "SMD",
+                    "subcategory_key": "logic",
+                    "subcategory_name": "逻辑"
+                },
+                {
+                    "part_number": "06004-00820000",
+                    "component_name": "CMOS INVERTER 74LVC2G04GW",
+                    "description": "[HE]NXP SOT363",
+                    "value": "74LVC2G04GW",
+                    "package": "SMD",
+                    "subcategory_key": "general_ic",
+                    "subcategory_name": "其他 IC"
+                },
+                {
+                    "part_number": "06007-000100GW",
+                    "component_name": "LDO REG. RT9069-33GQU UDFN-6L",
+                    "description": "RICHTEK/RT9069-33GQU",
+                    "value": "RT9069-33GQU",
+                    "package": "SMD",
+                    "subcategory_key": "pmic",
+                    "subcategory_name": "电源管理"
+                },
+                {
+                    "part_number": "06010-00010000",
+                    "component_name": "OP AMP. APL5611CITRG SOT23-6",
+                    "description": "[HF]ANPEC",
+                    "value": "APL5611CITRG",
+                    "package": "SMD",
+                    "subcategory_key": "amplifier",
+                    "subcategory_name": "运放/比较器"
+                },
+                {
+                    "part_number": "06014-00300100",
+                    "component_name": "MCU NRF52832-CIAA-R WLCSP50",
+                    "description": "[HF]NORDIC",
+                    "value": "NRF52832-CIAA",
+                    "package": "SMD",
+                    "subcategory_key": "rf",
+                    "subcategory_name": "射频"
+                },
+                {
+                    "part_number": "06014-00420000",
+                    "component_name": "USB MCU EM85F690DW",
+                    "description": "[HE]ELAN QFN-24",
+                    "value": "EM85F690DW",
+                    "package": "SMD",
+                    "subcategory_key": "interface",
+                    "subcategory_name": "接口"
+                },
+                {
+                    "part_number": "06023-00010000",
+                    "component_name": "TEMP. SENSOR LM26LVCISD-100",
+                    "description": "[HF]NS LLP-6",
+                    "value": "LM26LVCISD-100",
+                    "package": "SMD",
+                    "subcategory_key": "sensor",
+                    "subcategory_name": "传感器 AFE"
+                }
+            ]
+        },
+        "cpu": {
+            "key": "cpu",
+            "legacy_count": 67,
+            "samples": [
+                {
+                    "part_number": "01001-00110000",
+                    "component_name": "CPU PENWELL 915557 FCBGA617",
+                    "description": "[HF]INTEL 1.6GHZ",
+                    "value": "PENWELL915557",
+                    "package": "SMD",
+                    "subcategory_key": "mobile",
+                    "subcategory_name": "移动/嵌入式"
+                },
+                {
+                    "part_number": "01010-00020000",
+                    "component_name": "CPU T40S-R-A1 FCCSP-797 QS",
+                    "description": "[HF]NVIDIA",
+                    "value": "T40S-R-A0",
+                    "package": "SMD",
+                    "subcategory_key": "embedded",
+                    "subcategory_name": "其他处理器"
+                },
+                {
+                    "part_number": "01001-00130000",
+                    "component_name": "CPU AV8063801162000 917372 ES2",
+                    "description": "[HF]INT IVB QC 1.7G/6M C0 QBCA BGA",
+                    "value": "AV8063801162000",
+                    "package": "SMD",
+                    "subcategory_key": "mobile",
+                    "subcategory_name": "移动/嵌入式"
+                },
+                {
+                    "part_number": "01001-00170100",
+                    "component_name": "CPU AV8063801028801 918420 ES2",
+                    "description": "[HF]INT IVB DC 2.6G/4M K0 QBNY BGA",
+                    "value": "AV8063801028801",
+                    "package": "SMD",
+                    "subcategory_key": "mobile",
+                    "subcategory_name": "移动/嵌入式"
+                },
+                {
+                    "part_number": "01001-00510300",
+                    "component_name": "CPU CL8064701318105 924295",
+                    "description": "[GA]INT HSW 0.8G/4M B0 QDA7 BGA",
+                    "value": "CL8064701318105",
+                    "package": "SMD",
+                    "subcategory_key": "mobile",
+                    "subcategory_name": "移动/嵌入式"
+                },
+                {
+                    "part_number": "01001-00530000",
+                    "component_name": "CPU BONDI 923856",
+                    "description": "[HF]INT BONDI 1.2G/512K QD6W BGA",
+                    "value": "BONDI",
+                    "package": "SMD",
+                    "subcategory_key": "mobile",
+                    "subcategory_name": "移动/嵌入式"
+                },
+                {
+                    "part_number": "01001-00570000",
+                    "component_name": "CPU VALLEYVIEW 925952",
+                    "description": "[HF]INTEL BARTRAIL 2.1G A0 BGA1380",
+                    "value": "VALLEYVIEW",
+                    "package": "SMD",
+                    "subcategory_key": "mobile",
+                    "subcategory_name": "移动/嵌入式"
+                },
+                {
+                    "part_number": "01001-00630500",
+                    "component_name": "CPU FH8065301455200 930132 ES2",
+                    "description": "[HF]INTEL BAY TRAIL-D B0 BGA",
+                    "value": "BAY_TRAIL-D",
+                    "package": "SMD",
+                    "subcategory_key": "mobile",
+                    "subcategory_name": "移动/嵌入式"
+                }
+            ]
+        },
+        "chipset": {
+            "key": "chipset",
+            "legacy_count": 1094,
+            "samples": [
+                {
+                    "part_number": "02000-00020000",
+                    "component_name": "C.S MAX77663AEMJ+ eMGA-90",
+                    "description": "[HF]MAXIM POWER MANAGE",
+                    "value": "MAX77663AEMJ+",
+                    "package": "SMD",
+                    "subcategory_key": "pmic",
+                    "subcategory_name": "PMIC"
+                },
+                {
+                    "part_number": "02000-00080000",
+                    "component_name": "C.S OTS080CD DFN8",
+                    "description": "[HF]OBERTHUR",
+                    "value": "OTS080CD",
+                    "package": "SMD",
+                    "subcategory_key": "chipset",
+                    "subcategory_name": "平台芯片组"
+                },
+                {
+                    "part_number": "02006-00130000",
+                    "component_name": "C.S AT90USB1286-MU QFN64",
+                    "description": "[HF]ATMEL/FLASH MCU/128K/2.7-5.5V",
+                    "value": "AT90USB1286-MU",
+                    "package": "SMD",
+                    "subcategory_key": "interface",
+                    "subcategory_name": "接口"
+                },
+                {
+                    "part_number": "02000-00070000",
+                    "component_name": "C.S BD2610GW CSP224",
+                    "description": "[HF]ROHM PMIC",
+                    "value": "BD2610GW",
+                    "package": "SMD",
+                    "subcategory_key": "pmic",
+                    "subcategory_name": "PMIC"
+                },
+                {
+                    "part_number": "02000-00070100",
+                    "component_name": "C.S BD2610GW CSP224 A2",
+                    "description": "[HF]ROHM PMIC",
+                    "value": "BD2610GW",
+                    "package": "SMD",
+                    "subcategory_key": "pmic",
+                    "subcategory_name": "PMIC"
+                },
+                {
+                    "part_number": "02032-00060000",
+                    "component_name": "C.S PSNB5072A ZNB-289",
+                    "description": "[HF]TI PMIC",
+                    "value": "PSNB5072A",
+                    "package": "SMD",
+                    "subcategory_key": "pmic",
+                    "subcategory_name": "PMIC"
+                },
+                {
+                    "part_number": "02032-00060400",
+                    "component_name": "C.S SNB5072CZNBR ZNB289",
+                    "description": "[HF]TI PMIC",
+                    "value": "SNB5072CZNBR",
+                    "package": "SMD",
+                    "subcategory_key": "pmic",
+                    "subcategory_name": "PMIC"
+                },
+                {
+                    "part_number": "02032-00060500",
+                    "component_name": "C.S SNB5072C1ZNBR ZNB289",
+                    "description": "[HF]TI PMIC",
+                    "value": "SNB5072C1ZNBR",
+                    "package": "SMD",
+                    "subcategory_key": "pmic",
+                    "subcategory_name": "PMIC"
+                }
+            ]
+        },
+        "memory": {
+            "key": "memory",
+            "legacy_count": 313,
+            "samples": [
+                {
+                    "part_number": "03003-00010100",
+                    "component_name": "DDR2 SDRAM 32M*16 1.8V BGA84",
+                    "description": "[HF]NANYA/NT5TU32M16DG-BE",
+                    "value": "NT5TU32M16DG-BE",
+                    "package": "SMD",
+                    "subcategory_key": "dram",
+                    "subcategory_name": "DRAM"
+                },
+                {
+                    "part_number": "03009-00030600",
+                    "component_name": "LPD3 1866 512M*32 FBGA178 DD",
+                    "description": "[HF]MICRO/MT52L512M32D2PF-107 WT:B",
+                    "value": "MT52L512M32D2PF",
+                    "package": "SMD",
+                    "subcategory_key": "memory",
+                    "subcategory_name": "其他存储"
+                },
+                {
+                    "part_number": "03010-00020000",
+                    "component_name": "SRAM 128K*8 3.3V SOJ-32",
+                    "description": "CYPRESS/CY7C1019BV33-12VC",
+                    "value": "CY7C1019BV33-12VC",
+                    "package": "SMD",
+                    "subcategory_key": "sram",
+                    "subcategory_name": "SRAM"
+                },
+                {
+                    "part_number": "03100-00010100",
+                    "component_name": "FLASH ASINT 891J2AST1A6401",
+                    "description": "[HF]16GB TFBGA169",
+                    "value": "891J2AST1A6401",
+                    "package": "SMD",
+                    "subcategory_key": "flash",
+                    "subcategory_name": "Flash"
+                },
+                {
+                    "part_number": "03004-00010000",
+                    "component_name": "LPDDR 16M*32 1.8V FBGA-90",
+                    "description": "[HE]HYNIX/H5MS5122FFR-E3M",
+                    "value": "H5MS5122FFR-E3M",
+                    "package": "SMD",
+                    "subcategory_key": "dram",
+                    "subcategory_name": "DRAM"
+                },
+                {
+                    "part_number": "03004-00020000",
+                    "component_name": "SDRAM 16M*16-6 FBGA60",
+                    "description": "[HF]HYNIX/H5MS2562NFR-J3M",
+                    "value": "H5MS2562NFR-J3M",
+                    "package": "SMD",
+                    "subcategory_key": "dram",
+                    "subcategory_name": "DRAM"
+                },
+                {
+                    "part_number": "03004-00020100",
+                    "component_name": "LPDDR 16M*16-6 FBGA60",
+                    "description": "[HF]NANYA/NT6DM16M16AD-T3",
+                    "value": "NT6DM16M16AD-T3",
+                    "package": "SMD",
+                    "subcategory_key": "dram",
+                    "subcategory_name": "DRAM"
+                },
+                {
+                    "part_number": "03004-00030000",
+                    "component_name": "LPDDR 32M*16 1.8V 60VFBGA",
+                    "description": "[HF]WINBOND/W949D6FBHX5E",
+                    "value": "W949D6FBHX5E",
+                    "package": "SMD",
+                    "subcategory_key": "dram",
+                    "subcategory_name": "DRAM"
+                }
+            ]
+        },
+        "programmable": {
+            "key": "programmable",
+            "legacy_count": 238,
+            "samples": [
+                {
+                    "part_number": "05002-00010100",
+                    "component_name": "EEPROM 9904AMF SOP-8 ET2012E",
+                    "description": "[HF]CHRONTEL 64K FOR ET2012E W7_01",
+                    "value": "CH9904AMF",
+                    "package": "SMD",
+                    "subcategory_key": "eeprom",
+                    "subcategory_name": "EEPROM"
+                },
+                {
+                    "part_number": "05005-00020000",
+                    "component_name": "FPGA ICE40HX8K-CB132",
+                    "description": "LATTICE CSBGA-132",
+                    "value": "ICE40HX8K-CB132",
+                    "package": "SMD",
+                    "subcategory_key": "fpga",
+                    "subcategory_name": "FPGA"
+                },
+                {
+                    "part_number": "05006-000100GW",
+                    "component_name": "FLASH W25R256JWEIQS WSON8",
+                    "description": "WINBOND/SPI 256Mb",
+                    "value": "256Mb",
+                    "package": "SMD",
+                    "subcategory_key": "programmable",
+                    "subcategory_name": "其他可编程"
+                },
+                {
+                    "part_number": "05006-00090200",
+                    "component_name": "FLASH MICRON N25Q128A13ESE40F",
+                    "description": "[HF]128M SOIC8",
+                    "value": "N25Q128A13ESE40F",
+                    "package": "SMD",
+                    "subcategory_key": "mcu",
+                    "subcategory_name": "MCU"
+                },
+                {
+                    "part_number": "05G032050020",
+                    "component_name": "CPLD EPM240T100C5N    TQFP-100",
+                    "description": "[GA]ALTERA",
+                    "value": "EPM240T100C5N",
+                    "package": "SMD",
+                    "subcategory_key": "cpld",
+                    "subcategory_name": "CPLD"
+                },
+                {
+                    "part_number": "05002-00010200",
+                    "component_name": "EEPROM 9904AMF SOP-8 ET2012A",
+                    "description": "[HF]CHRONTEL 64K FOR ET2012A USE",
+                    "value": "9904AMF",
+                    "package": "SMD",
+                    "subcategory_key": "eeprom",
+                    "subcategory_name": "EEPROM"
+                },
+                {
+                    "part_number": "05002-00010300",
+                    "component_name": "EEPROM 9904AMF SOP-8",
+                    "description": "[HF]CHRONTEL 64K FOR E2012E 0116",
+                    "value": "9904AMF",
+                    "package": "SMD",
+                    "subcategory_key": "eeprom",
+                    "subcategory_name": "EEPROM"
+                },
+                {
+                    "part_number": "05002-00010600",
+                    "component_name": "EEPROM 9904AMF SOP-8",
+                    "description": "[HF]CHRONTEL 64K WIN8 HW V01",
+                    "value": "9904AMF",
+                    "package": "SMD",
+                    "subcategory_key": "eeprom",
+                    "subcategory_name": "EEPROM"
+                }
+            ]
+        },
+        "communication": {
+            "key": "communication",
+            "legacy_count": 42,
+            "samples": [
+                {
+                    "part_number": "0C001-00010000",
+                    "component_name": "802.11B/G/N WLAN MPCI",
+                    "description": "[GA]ASKEY/WLL6370",
+                    "value": "WLL6370",
+                    "package": "SMD",
+                    "subcategory_key": "wifi",
+                    "subcategory_name": "Wi-Fi"
+                },
+                {
+                    "part_number": "0C031-00060000",
+                    "component_name": "HSPA+ LGA MODULE",
+                    "description": "[HE]HUAWEI/MU739 11.102.15.02.00",
+                    "value": "MU739",
+                    "package": "SMD",
+                    "subcategory_key": "communication",
+                    "subcategory_name": "其他通信"
+                },
+                {
+                    "part_number": "0C300-00010100",
+                    "component_name": "BLUETOOTH MODULE",
+                    "description": "[EL]AZWAVE/AW-BT715",
+                    "value": "AW-BT715",
+                    "package": "SMD",
+                    "subcategory_key": "bluetooth",
+                    "subcategory_name": "蓝牙"
+                },
+                {
+                    "part_number": "0C600-00010000",
+                    "component_name": "GPS STA-8088 QFPN56",
+                    "description": "[GA]ST/STA 8088",
+                    "value": "STA-8088",
+                    "package": "SMD",
+                    "subcategory_key": "gps",
+                    "subcategory_name": "GPS/GNSS"
+                },
+                {
+                    "part_number": "0C002-00040100",
+                    "component_name": "PINE PEAK 802.11AD WIGI MAC/BB",
+                    "description": "INTEL/11100.D2WG.VR.E",
+                    "value": "11100.D2WG.VR.E",
+                    "package": "SMD",
+                    "subcategory_key": "wifi",
+                    "subcategory_name": "Wi-Fi"
+                },
+                {
+                    "part_number": "0C011-00013000",
+                    "component_name": "802.11B/G/N+BT4.0+GPS+FM TX/RX",
+                    "description": "[GA]MURATA/LBEL1ZLTTZ",
+                    "value": "LBEL1ZLTTZ",
+                    "package": "SMD",
+                    "subcategory_key": "wifi",
+                    "subcategory_name": "Wi-Fi"
+                },
+                {
+                    "part_number": "0C011-00024000",
+                    "component_name": "EPCOS 802.11B/G/N+BT3.0+GPS+FM",
+                    "description": "[GA]EPCOS/R054",
+                    "value": "R054",
+                    "package": "SMD",
+                    "subcategory_key": "wifi",
+                    "subcategory_name": "Wi-Fi"
+                },
+                {
+                    "part_number": "0C011-00065000",
+                    "component_name": "802.11B/G/N WLAN+BT4.0+GPS+FM",
+                    "description": "[HF]MEDIATEK/MT6628QP",
+                    "value": "MT6628QP",
+                    "package": "SMD",
+                    "subcategory_key": "wifi",
+                    "subcategory_name": "Wi-Fi"
+                }
+            ]
+        },
+        "system": {
+            "key": "system",
+            "legacy_count": 87,
+            "samples": [
+                {
+                    "part_number": "04030-00090100",
+                    "component_name": "A80 VIBRATOR",
+                    "description": "[GA]SELMAG/GD-2335",
+                    "value": "VIBRATOR_3P",
+                    "package": "SMD",
+                    "subcategory_key": "vibrator",
+                    "subcategory_name": "振动马达"
+                },
+                {
+                    "part_number": "04070-00010000",
+                    "component_name": "DIGITAL MINI MICROPHONE",
+                    "description": "[GA]KNOWLES/SPM0408HE5H",
+                    "value": "SPM0408HE5H",
+                    "package": "SMD",
+                    "subcategory_key": "module",
+                    "subcategory_name": "其他模块"
+                },
+                {
+                    "part_number": "04071-00450000",
+                    "component_name": "DYNAMIC MINIATURE SPEAKER",
+                    "description": "[GA]AAC/DMSP0916C-J-03",
+                    "value": "SPEAKER_2P",
+                    "package": "SMD",
+                    "subcategory_key": "buzzer",
+                    "subcategory_name": "蜂鸣器/扬声器"
+                },
+                {
+                    "part_number": "04G580064100",
+                    "component_name": "EP90 GPS CHIP ANTENNA",
+                    "description": "[GA]INPAQ/ACD-5036-A3-CC-S",
+                    "value": "ACD-5036-A3-CC-S",
+                    "package": "SMD",
+                    "subcategory_key": "antenna",
+                    "subcategory_name": "天线"
+                },
+                {
+                    "part_number": "04030-00130000",
+                    "component_name": "ME372CG VIBRATOR",
+                    "description": "[HF]SELMAG/GF3136",
+                    "value": "GF3136",
+                    "package": "SMD",
+                    "subcategory_key": "vibrator",
+                    "subcategory_name": "振动马达"
+                },
+                {
+                    "part_number": "04030-00170000",
+                    "component_name": "VIBRATION MOTOR",
+                    "description": "[GA]SELMAG/GS-2703",
+                    "value": "VIBRATOR_3P",
+                    "package": "SMD",
+                    "subcategory_key": "vibrator",
+                    "subcategory_name": "振动马达"
+                },
+                {
+                    "part_number": "04030-00230000",
+                    "component_name": "N46JV VIBRATOR SMT",
+                    "description": "[EL]JINLONG/Z3OC1T8219654",
+                    "value": "Z3OC1T8219654",
+                    "package": "SMD",
+                    "subcategory_key": "vibrator",
+                    "subcategory_name": "振动马达"
+                },
+                {
+                    "part_number": "04030-00260000",
+                    "component_name": "WI500Q VIBRATOR SMT",
+                    "description": "[EL]BAOLONG/BLT-4311",
+                    "value": "BLT-4311",
+                    "package": "SMD",
+                    "subcategory_key": "vibrator",
+                    "subcategory_name": "振动马达"
+                }
+            ]
+        },
+        "mechanical": {
+            "key": "mechanical",
+            "legacy_count": 5260,
+            "samples": [
+                {
+                    "part_number": "13020-00100500",
+                    "component_name": "NUT M2 H=4",
+                    "description": "[HF]SANZHI 5.0*4.0*M2.0",
+                    "value": "CT256B176ID146",
+                    "package": "SMD",
+                    "subcategory_key": "nut",
+                    "subcategory_name": "螺母"
+                },
+                {
+                    "part_number": "13020-00109300",
+                    "component_name": "NUT_SMT_4.5*2.0",
+                    "description": "[HF]SHAREMIN/HT-G4520M20TFE-1",
+                    "value": "CT217CB136D106",
+                    "package": "SMD",
+                    "subcategory_key": "mechanical",
+                    "subcategory_name": "其他结构件"
+                },
+                {
+                    "part_number": "13020-00591500",
+                    "component_name": "STANDOFF 2.8*2.5 0.75H SMT",
+                    "description": "[HF]EMISTOP/SO-08G",
+                    "value": "SMD110X98",
+                    "package": "SMD",
+                    "subcategory_key": "standoff",
+                    "subcategory_name": "支柱/垫片"
+                },
+                {
+                    "part_number": "13020-02680100",
+                    "component_name": "T303UA SMD RF CLIP",
+                    "description": "[HE]CHANG GU/92-1607",
+                    "value": "SHIELDING_3P",
+                    "package": "SMD",
+                    "subcategory_key": "shield",
+                    "subcategory_name": "屏蔽"
+                },
+                {
+                    "part_number": "13G075248000DP",
+                    "component_name": "6470M HS 1S 4SCREW",
+                    "description": "[GA]ACMEER LIMIT/10VE0006-11",
+                    "value": "HEATSINK_4P",
+                    "package": "DIP",
+                    "subcategory_key": "heatsink",
+                    "subcategory_name": "散热"
+                },
+                {
+                    "part_number": "13NK01S1M02011",
+                    "component_name": "FE71CG SCREW HOLDER",
+                    "description": "[HF]WAN CHENG",
+                    "value": "HOLDER_3P",
+                    "package": "SMD",
+                    "subcategory_key": "screw",
+                    "subcategory_name": "螺丝"
+                },
+                {
+                    "part_number": "13020-00100600",
+                    "component_name": "NUT M2 H=8.3",
+                    "description": "[HF]SANZHI 4.0*8.3*M2.0",
+                    "value": "CT217B67ID47",
+                    "package": "SMD",
+                    "subcategory_key": "nut",
+                    "subcategory_name": "螺母"
+                },
+                {
+                    "part_number": "13020-00100700",
+                    "component_name": "NUT M2 H=2.4",
+                    "description": "[HF]SANZHI 4.5*2.4*M2.0",
+                    "value": "CT189B180ID150",
+                    "package": "SMD",
+                    "subcategory_key": "nut",
+                    "subcategory_name": "螺母"
+                }
+            ]
+        }
+    }
+}

@@ -29,6 +29,19 @@ final class CuiIcon
         'filter'   => '<path d="M4 5h16l-6 8v6l-4 2v-8z"/>',
         'alert'    => '<path d="M12 3l9 17H3z"/><path d="M12 9v5M12 17h.01"/>',
         'plus'     => '<path d="M12 5v14M5 12h14"/>',
+        'resistor' => '<path d="M3 12h4l1.5-4 3 8 2-4H21"/><path d="M4 7v10M20 7v10"/>',
+        'capacitor'=> '<path d="M4 12h6M14 12h6"/><path d="M10 7v10M14 7v10"/>',
+        'inductor' => '<path d="M3 14c2-6 4-6 6 0s4 6 6 0 4-6 6 0"/><path d="M3 18h18"/>',
+        'connector'=> '<path d="M4 7h16v10H4z"/><path d="M8 7V4M12 7V4M16 7V4M8 17v3M12 17v3M16 17v3"/>',
+        'discrete' => '<path d="M4 12h5l3-6 4 12 2-6h2"/><circle cx="5" cy="18" r="1"/>',
+        'chip'     => '<rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 3v4M12 3v4M15 3v4M9 17v4M12 17v4M15 17v4M3 9h4M3 12h4M3 15h4M17 9h4M17 12h4M17 15h4"/>',
+        'cpu'      => '<rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>',
+        'power'    => '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+        'memory'   => '<rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 6V3M12 6V3M16 6V3M8 18v3M12 18v3M16 18v3"/>',
+        'programmable' => '<rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>',
+        'wireless' => '<path d="M5 12a7 7 0 0 1 14 0"/><path d="M8 15a4 4 0 0 1 8 0"/><circle cx="12" cy="19" r="1"/><path d="M2 9a10 10 0 0 1 20 0"/>',
+        'motor'    => '<circle cx="12" cy="12" r="6"/><path d="M12 6V3M12 21v-3M6 12H3M21 12h-3M7.8 7.8L5.6 5.6M18.4 18.4l-2.2-2.2"/>',
+        'mechanical' => '<circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8"/>',
     ];
 
     public static function render(string $name, string $class = 'ic'): string

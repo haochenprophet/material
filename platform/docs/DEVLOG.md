@@ -907,6 +907,18 @@
   - 旧 `material/`、`.git`、旧库未变。
 - 最终 release 见 `RELEASE`。
 
+## CHG-20261125-070 · 13 品类页（hardware.sql）
+
+- 时间：2026-11-25 11:30
+- 数据：`hardware.sql` Greatwall CIS **25,270 行 / 13 Part Type**；封装 SMD 18,454、DIP 6,660。
+- 分类：电阻/电容/电感磁珠/连接器/分立/IC/CPU/芯片组/存储/可编程/通信/系统/机械；子类参考立创。
+- 数据：104 条样本材料/报价（8/类），fixture `category-samples.json`，seed 脚本。
+- UI：首页搜索框上方 13 品类 hub；`/category/{slug}` hero/统计/子类/筛选/报价卡/参数商家侧栏。
+- 测试：`tests/category-pages.php` 15 PASS；`verify` 356；release-check 49 READY。
+- 队列：`CATEGORY-TASK-QUEUE.md` 500 项，392 DONE / 108 PENDING。
+- 边界：价格为演示参考；真机/a11y/Lighthouse/API/后台/压测仍 PENDING。
+- 回滚点：`git-ai-test-v0.58.2`。
+
 ## 待办（按优先级）
 
 1. 运行 snapshot/verify，修复失败项。

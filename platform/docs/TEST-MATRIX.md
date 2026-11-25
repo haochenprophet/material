@@ -6,7 +6,7 @@
 
 | 命令 | PASS | 覆盖 |
 |---|---|---|
-| `php platform/bin/verify.php` | 344 | 路由/API/页面/manifest/旧代码 |
+| `php platform/bin/verify.php` | 356 | 路由/API/页面/manifest/旧代码 |
 | `php platform/tests/run.php` | 31 | 状态机/定价/BOM/规则 |
 | `php platform/tests/api.php` | 23 | API 信封/订单/报价/BOM |
 | `php platform/tests/db.php` | 7 | 配置/仓储/失败路径 |
@@ -41,6 +41,7 @@
 | `php platform/tests/payment-sandbox.php` | 10 | 支付/分账/退款/对账 |
 | `php platform/tests/commission.php` | 11 | 佣金规则/最低最高/版本 |
 | `php platform/tests/api-auth.php` | 11 | token/scope/401/403/429 |
+| `php platform/tests/category-pages.php` | 15 | 13 品类/104 样本/过滤 |
 | `php platform/tests/a11y.php` | 10 | 语义/标签/alt/按钮 |
 | `php platform/tests/migration-extended.php` | 12 | 007–013 增量/无 DROP |
 | `php platform/tests/regression.php` | 18 | 8091/8095/8096/8097 |
@@ -62,9 +63,9 @@
 
 ## 3. 总览
 
-- 测试文件：47
-- `release-check.php`：48 项（44 离线 + 4 DB live）
-- 离线套件：44 个
+- 测试文件：48
+- `release-check.php`：49 项（45 离线 + 4 DB live）
+- 离线套件：45 个
 - live：4 个（设置 `DB_USER` 时）
 - 断言总数：约 328（各套件 PASS 相加，不含重复的 verify 子检查）
 

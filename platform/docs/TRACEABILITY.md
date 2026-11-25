@@ -112,6 +112,7 @@
 | REQ-MIG-002 | 007–013 重建 92 表 | `bin/schema-rebuild.php` | — | — | 12 条测试 + 新库 92 表 | DONE（本机） |
 | REQ-REG-001 | 全链路回归 | `tests/regression.php` | — | — | 18 条 PASS | DONE（本机） |
 | REQ-CLOSE-002 | 队列 Q01–Q16 收口 | `TASK-QUEUE.md` | `CLOSURE-REPORT.md` | — | 无 PENDING | DONE |
+| REQ-CAT-001 | 13 品类页/500 任务 | `/category/{slug}` | `PdoCategoryCatalogRepository` | `014_category_catalog.sql` | `tests/category-pages.php` 15 + 392/500 | DONE（基础） |
 
 ## 验证命令
 

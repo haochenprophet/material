@@ -54,6 +54,14 @@ if ($db['code'] === 200) {
     check('8095 商城', fetch('http://127.0.0.1:8095/shops')['code'] === 200);
     check('8095 商家商城', fetch('http://127.0.0.1:8095/shop/hqb-industrial')['code'] === 200);
     check('8095 商城点评', str_contains(fetch('http://127.0.0.1:8095/shop/hqb-industrial')['body'], '全部商品点评'));
+    check('8095 品类页电阻', fetch('http://127.0.0.1:8095/category/resistor')['code'] === 200);
+    check('8095 品类页连接器', str_contains(fetch('http://127.0.0.1:8095/category/connector')['body'], '连接器'));
+    check('8095 品类页非法 404', fetch('http://127.0.0.1:8095/category/no-such')['code'] === 404);
+    $catAll = true;
+    foreach (array_keys(MaterialCategory::all()) as $slug) {
+        if (fetch('http://127.0.0.1:8095/category/' . rawurlencode($slug))['code'] !== 200) { $catAll = false; break; }
+    }
+    check('8095 13 品类页全部 200', $catAll);
 } else {
     echo 'SKIP: 8095 未启动' . PHP_EOL;
     $skip++;

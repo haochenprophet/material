@@ -4,7 +4,7 @@
 
 - [ ] `git -C material status --short` 只包含预期新增，旧代码无修改
 - [ ] `php platform/bin/verify.php` → 0 FAIL
-- [ ] `php platform/bin/release-check.php` → `release: READY`（44 项离线 / 48 项含 DB）
+- [ ] `php platform/bin/release-check.php` → `release: READY`（45 项离线 / 49 项含 DB）
 - [ ] `php platform/bin/snapshot.php` → 只更新 manifest/RELEASE（不复制代码）
 - [ ] `php platform/bin/git-release.php` → git tag
 - [ ] `php platform/tests/e2e.php` → PASS（需 8091）

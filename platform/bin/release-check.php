@@ -52,6 +52,7 @@ $checks = [
     'field_mapping' => PLATFORM_PATH . '/tests/field-mapping.php',
     'payment_sandbox' => PLATFORM_PATH . '/tests/payment-sandbox.php',
     'commission' => PLATFORM_PATH . '/tests/commission.php',
+    'category_pages' => PLATFORM_PATH . '/tests/category-pages.php',
     'api_auth' => PLATFORM_PATH . '/tests/api-auth.php',
     'a11y' => PLATFORM_PATH . '/tests/a11y.php',
     'migration_extended' => PLATFORM_PATH . '/tests/migration-extended.php',

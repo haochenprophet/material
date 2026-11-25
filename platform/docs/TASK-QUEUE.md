@@ -4,7 +4,7 @@
 - 规则：每轮只取第一个 `PENDING`；完成后改为 `DONE`，立即进入下一个；不等待用户。
 - 每轮必须：代码/测试/数据/文档至少一项 + `checkpoint.php` + `verify.php` + `release-check.php` + git tag（不再复制 release）。
 - 约束：不删除/不改写旧 `material/`、`.git`、旧库 `materiel`；旧 release 副本已删除，版本只由 git tag 追踪。
-- 当前基线：v0.58.2 最终收口（92 表 / verify 344 / release-check 48；最终 release 见 `RELEASE` + git tag）。
+- 当前基线：v0.59.0 品类扩展（92 表 / verify 356 / release-check 49；最终 release 见 `RELEASE` + git tag）。
 
 ## 队列状态
 

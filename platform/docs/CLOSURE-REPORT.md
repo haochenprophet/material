@@ -1,10 +1,10 @@
-# v0.58.2 最终闭环报告（CLOSURE REPORT）
+# v0.59.0 品类页扩展报告（CLOSURE REPORT）
 
 - 窗口：2026-11-24 18:40 起（Asia/Shanghai），10 小时持续目标
 - 本轮检查点：2026-11-24 18:47
 - 代码根：`E:\patent-sys\material\platform`
 - 旧代码：`E:\patent-sys\material`（未修改、未删除）
-- 版本：0.58.2
+- 版本：0.59.0
 
 ## 1. 本轮完成
 
@@ -44,7 +44,7 @@
 - `CATALOG_SOURCE=db`：首页/详情真实 DB→HTML（8095），测试 listing 1 条；`tests/listing-repo-live.php` 5 条。
 - `CatalogDetailPresenter`：详情页 DB 映射；`tests/catalog-detail.php` 6 条。
 - 性能/安全基线：`tests/perf.php` 6 条、`tests/security.php` 12 条。
-- `release-check`：48 项检查全部 PASS（44 离线 + 4 DB live）；验收/发布/风险文档已就位。
+- `release-check`：49 项检查全部 PASS（45 离线 + 4 DB live）；验收/发布/风险文档已就位。
 - 部署样例：Nginx + PHP-FPM + deny storage/隐藏文件；`tests/deploy.php` 7 条。
 - DB 账号：`PdoAuthRepository` + `AUTH_SOURCE=db`；8096 实测；测试 8+3 条。
 - `LoginThrottle`：5 次/15 分钟锁定；`tests/throttle.php` 7 条。
@@ -83,7 +83,7 @@
 | 检查 | 结果 |
 |---|---|
 | `php -l` 全部 PHP | 0 failure |
-| `php bin/verify.php` | PASS 344 / FAIL 0 / WARN 0 |
+| `php bin/verify.php` | PASS 356 / FAIL 0 / WARN 0 |
 | `php tests/run.php` | PASS 31 / FAIL 0 |
 | `php tests/api.php` | PASS 23 / FAIL 0 |
 | `php tests/db.php` | PASS 7 / FAIL 0 |
@@ -99,7 +99,7 @@
 | `php tests/catalog-detail.php` | PASS 6 / FAIL 0 |
 | `php tests/perf.php` | PASS 6 / FAIL 0 |
 | `php tests/security.php` | PASS 12 / FAIL 0 |
-| `php bin/release-check.php` | 48 项 PASS / READY |
+| `php bin/release-check.php` | 49 项 PASS / READY |
 | `php tests/deploy.php` | PASS 7 / FAIL 0 |
 | `php tests/auth-db.php` | PASS 8 / FAIL 0 |
 | `php tests/auth-db-live.php` | PASS 3 / FAIL 0（需 DB_USER） |
