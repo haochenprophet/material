@@ -20,7 +20,7 @@ manifest.json / RELEASE（git 跟踪文件清单）
 ```
 
 - 不再创建 release 目录副本。
-- 不删除历史 release。
+- 历史 release 副本已删除；不再创建目录副本。
 - `RELEASE` / `manifest.json` 必须匹配。
 
 ## 3. 发布后

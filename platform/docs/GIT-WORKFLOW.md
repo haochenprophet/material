@@ -5,7 +5,7 @@
 - **版本 = git commit + git tag**；不再生成 `releases/` 代码副本。
 - `bin/snapshot.php` 只更新 `manifest.json` / `RELEASE`，文件清单来自 `git ls-files`。
 - `bin/git-release.php` 只创建 annotated tag，不复制代码。
-- 旧 `releases/` 是历史遗留，保留不动，但不再新增/不作为发布流程。
+- 历史 `releases/` 副本已删除（2026-11-25），以后不得再创建；版本只由 git commit/tag 追踪。
 
 ## 分支
 

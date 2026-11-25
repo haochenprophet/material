@@ -1,10 +1,10 @@
-# v0.58.1 最终闭环报告（CLOSURE REPORT）
+# v0.58.2 最终闭环报告（CLOSURE REPORT）
 
 - 窗口：2026-11-24 18:40 起（Asia/Shanghai），10 小时持续目标
 - 本轮检查点：2026-11-24 18:47
 - 代码根：`E:\patent-sys\material\platform`
 - 旧代码：`E:\patent-sys\material`（未修改、未删除）
-- 版本：0.58.1
+- 版本：0.58.2
 
 ## 1. 本轮完成
 

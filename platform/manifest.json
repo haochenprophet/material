@@ -1,9 +1,9 @@
 {
     "app": "物格云 MaterialGrid",
-    "version": "0.58.1",
-    "release": "git-ai-v0.58.1",
+    "version": "0.58.2",
+    "release": "git-ai-v0.58.2",
     "branch": "ai",
-    "generated_at": "2026-11-25T10:37:02+08:00",
+    "generated_at": "2026-11-25T10:40:39+08:00",
     "php": "8.4.3",
     "files": {
         ".env.example": {
@@ -12,14 +12,14 @@
             "mtime": "2026-11-24T18:50:21+08:00"
         },
         ".gitignore": {
-            "size": 181,
-            "sha256": "8759a7baf99cdb8cad685493a2627c60df90fd97c2ad3fd66cb79914815ca6f8",
-            "mtime": "2026-11-25T10:36:58+08:00"
+            "size": 170,
+            "sha256": "2ee88e1e687d84dd7997c799df51bbe146b187896949e74356b3b1d88f21a70e",
+            "mtime": "2026-11-25T10:40:29+08:00"
         },
         "CHANGELOG.md": {
-            "size": 18100,
-            "sha256": "4bb2f8d94174caa704fd345d8748bee95a53d3e4e8c8a4ea4f4791e04aeb037a",
-            "mtime": "2026-11-25T10:36:58+08:00"
+            "size": 18398,
+            "sha256": "69fdc15a3c5b32e9c86044514e0eaa63c6f1d614d2a123362477f8034a82002f",
+            "mtime": "2026-11-25T10:40:34+08:00"
         },
         "README.md": {
             "size": 2931,
@@ -28,8 +28,8 @@
         },
         "VERSION": {
             "size": 8,
-            "sha256": "c1d04ea1f88df653c7cb6b3880146116133f55d48fd2b040506c8d35fb88b262",
-            "mtime": "2026-11-25T10:36:58+08:00"
+            "sha256": "448ad974d97f801786efbf8f07e547775070ed12278f40b03f2a61751f5dbf12",
+            "mtime": "2026-11-25T10:40:34+08:00"
         },
         "app/Api.php": {
             "size": 7697,
@@ -563,8 +563,8 @@
         },
         "docs/ACCEPTANCE.md": {
             "size": 2964,
-            "sha256": "a99df4d362ebe59f35629d08df1acb915fde82fd17c85459dc395eef0e198e34",
-            "mtime": "2026-11-25T10:36:58+08:00"
+            "sha256": "78deb29f06b6e41faf86bb7623d130da6447b995a1ab438d733751f779921542",
+            "mtime": "2026-11-25T10:40:39+08:00"
         },
         "docs/API-AUTH.md": {
             "size": 958,
@@ -589,7 +589,7 @@
         "docs/BASELINE.md": {
             "size": 3242,
             "sha256": "17197ad1533ba896a201848f23d94963731354d18b1a35265ede9c17803020ab",
-            "mtime": "2026-11-24T18:40:44+08:00"
+            "mtime": "2026-11-25T10:40:34+08:00"
         },
         "docs/BOM-PARSER.md": {
             "size": 1660,
@@ -613,8 +613,8 @@
         },
         "docs/CLOSURE-REPORT.md": {
             "size": 10058,
-            "sha256": "29462bc3d68e8f0b7d695781443018a14019aea43a379af059522ee3c0ec2890",
-            "mtime": "2026-11-25T10:36:58+08:00"
+            "sha256": "d3598ddd4c131000df49dea2f1aa6fb90cd11197673ef61bb0c79ad36f12904b",
+            "mtime": "2026-11-25T10:40:39+08:00"
         },
         "docs/CODE-MAP.md": {
             "size": 3391,
@@ -662,9 +662,9 @@
             "mtime": "2026-11-24T19:48:04+08:00"
         },
         "docs/GIT-WORKFLOW.md": {
-            "size": 1877,
-            "sha256": "1e7770b356f47dba0a47376e43f90f771bb48df681a1565c89da9f0bd473c54d",
-            "mtime": "2026-11-25T10:36:17+08:00"
+            "size": 1902,
+            "sha256": "12ae66ef1ecf5b3a7b1f3e621fa6f59285370e9566ddb75a3ecb690401912da8",
+            "mtime": "2026-11-25T10:40:34+08:00"
         },
         "docs/IMAGE-UPLOAD.md": {
             "size": 1087,
@@ -727,9 +727,9 @@
             "mtime": "2026-11-25T10:23:42+08:00"
         },
         "docs/RELEASE-CHECKLIST.md": {
-            "size": 1568,
-            "sha256": "ce93de228add2df38cb5a2fbfb36184a4da99764f0b82480645b214755d471d2",
-            "mtime": "2026-11-25T10:36:17+08:00"
+            "size": 1602,
+            "sha256": "1b2c2174a453a606e057a66f1c2f3de597d184ea1213e5c5241b2e6c7275a364",
+            "mtime": "2026-11-25T10:40:34+08:00"
         },
         "docs/REPUTATION-PLAN.md": {
             "size": 3155,
@@ -762,9 +762,9 @@
             "mtime": "2026-11-24T19:46:29+08:00"
         },
         "docs/TASK-QUEUE.md": {
-            "size": 3286,
-            "sha256": "f375cd6d238975b1f0b688a4812355dffa87ddf1172742c512fca628318c418f",
-            "mtime": "2026-11-25T10:36:58+08:00"
+            "size": 3329,
+            "sha256": "af67890f574dba7ee8329717f1c87b1138c0129d60026d45824903008f807861",
+            "mtime": "2026-11-25T10:40:39+08:00"
         },
         "docs/TEST-MATRIX.md": {
             "size": 4089,
