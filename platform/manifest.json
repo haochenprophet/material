@@ -1,0 +1,1374 @@
+{
+    "app": "物格云 MaterialGrid",
+    "version": "0.57.0",
+    "release": "v0.57.0-20261125-102503",
+    "generated_at": "2026-11-25T10:25:03+08:00",
+    "php": "8.4.3",
+    "files": {
+        ".env.example": {
+            "size": 178,
+            "sha256": "bbc9cfd8ef7de25ef667fbe3685feb2f729eafecdc20fc9b5bd0f72b9ac1b646",
+            "mtime": "2026-11-24T18:50:21+08:00"
+        },
+        "CHANGELOG.md": {
+            "size": 17614,
+            "sha256": "d070964d896d1ac2b6707fc33667d6572d1710ce55780eeca7807af0ffa26b91",
+            "mtime": "2026-11-25T10:24:58+08:00"
+        },
+        "README.md": {
+            "size": 2931,
+            "sha256": "bbce433f3b4e492dd984060c6e85c3b274ff261a29cc7f118f4b98230d7be784",
+            "mtime": "2026-11-24T18:55:05+08:00"
+        },
+        "VERSION": {
+            "size": 8,
+            "sha256": "8195166396748a746cec658d9b19d2decfb4312cac27603d34ed4bda65e6dba0",
+            "mtime": "2026-11-25T10:24:58+08:00"
+        },
+        "app/Api.php": {
+            "size": 7697,
+            "sha256": "00c1073b6ea43383cb47766884c7f7159aa12f61f5125d231e56a81fa47e924e",
+            "mtime": "2026-11-25T10:16:24+08:00"
+        },
+        "app/Data/DemoData.php": {
+            "size": 10020,
+            "sha256": "535362f1b342c8e56993952836a74f8e34e5755f81dfe0cd4869ddeb1a994b5a",
+            "mtime": "2026-11-24T18:34:31+08:00"
+        },
+        "app/Domain/BomCsvParser.php": {
+            "size": 5094,
+            "sha256": "f96f2f8293ec9639ac01a7a068af075be943f135c05c42a21dff55b8ca87eef0",
+            "mtime": "2026-11-24T18:56:01+08:00"
+        },
+        "app/Domain/BomMatcher.php": {
+            "size": 1995,
+            "sha256": "13c9d4603f17871b3743be41ee2ee06ebd2df9a0fa6e61dbac427e0ccc7a0d25",
+            "mtime": "2026-11-24T18:42:41+08:00"
+        },
+        "app/Domain/CatalogDetailPresenter.php": {
+            "size": 1729,
+            "sha256": "0478f9742c439cdb4201d3104411d9e72cfa55b4ddd1c97db817900454252daa",
+            "mtime": "2026-11-24T19:23:17+08:00"
+        },
+        "app/Domain/CommissionCalculator.php": {
+            "size": 1041,
+            "sha256": "f90628d6c88f2e20ec3001ea1afb6dbb0da5668e90b04f04d92b9d3c87b2bd3f",
+            "mtime": "2026-11-25T10:14:35+08:00"
+        },
+        "app/Domain/CreditHistory.php": {
+            "size": 2155,
+            "sha256": "8849f2d92f9c09d508e6c4f97e29dd5e19d61e88ad7b514a1f1f392fbccaa3d7",
+            "mtime": "2026-11-25T10:02:23+08:00"
+        },
+        "app/Domain/CreditScoring.php": {
+            "size": 4900,
+            "sha256": "b1d11418abcda664314ebdc28687a3ebad5109c82d2f6150a053a13ec287b24a",
+            "mtime": "2026-11-25T09:40:50+08:00"
+        },
+        "app/Domain/FieldMapping.php": {
+            "size": 4369,
+            "sha256": "5d7564251761b2d04ec1a8a4d2ec34cc3681f18d986decbd099226d3eb3dd0cc",
+            "mtime": "2026-11-25T10:10:55+08:00"
+        },
+        "app/Domain/IdempotencyStore.php": {
+            "size": 729,
+            "sha256": "533fc44f03fe8b749028925c2d7131e6f1bcf3dfea9e4e13eae3d07b4e65af5e",
+            "mtime": "2026-11-24T19:06:45+08:00"
+        },
+        "app/Domain/LedgerService.php": {
+            "size": 3178,
+            "sha256": "85982b18fd662c96fb96053ac0c0e3463d75038671908efb91ca617bcfc687a1",
+            "mtime": "2026-11-24T19:04:07+08:00"
+        },
+        "app/Domain/MigrationRunner.php": {
+            "size": 2358,
+            "sha256": "a3d9c3856900d300f113e3e1ae19e61d97ea68d4d3e287b1f1cb7087efc5b11e",
+            "mtime": "2026-11-24T19:14:05+08:00"
+        },
+        "app/Domain/OrderPresenter.php": {
+            "size": 2657,
+            "sha256": "458f72631a5fcacf2acc237292d661cb5a0ad30dcaa443a5248d564e4d19e31e",
+            "mtime": "2026-11-24T19:17:03+08:00"
+        },
+        "app/Domain/OrderService.php": {
+            "size": 1768,
+            "sha256": "527fee4de64f8b50dcc8d3aa09af06e21f09dc45c3bd141498a548b34963adea",
+            "mtime": "2026-11-24T19:02:39+08:00"
+        },
+        "app/Domain/OrderStore.php": {
+            "size": 1044,
+            "sha256": "73329fecaa52118e07f3527caaeabb63fb7cc5a0eafca820f41913eaaa31fe29",
+            "mtime": "2026-11-24T19:17:03+08:00"
+        },
+        "app/Domain/PaymentCallbackService.php": {
+            "size": 2351,
+            "sha256": "59933a82fd6436cf7eec63970dacb633a872bd7729ef4d98d04d454edd04ffa6",
+            "mtime": "2026-11-24T19:06:45+08:00"
+        },
+        "app/Domain/PaymentService.php": {
+            "size": 2767,
+            "sha256": "c9df165b7ce79211170ebd8f73cb90307bca19a5ab8c6e5231ef59db52faf8af",
+            "mtime": "2026-11-24T19:04:06+08:00"
+        },
+        "app/Domain/Pricing.php": {
+            "size": 2937,
+            "sha256": "061169fb7292d64437dfcd395db6a45cb9b99b4ce0f69c7f7ebb92607788126c",
+            "mtime": "2026-11-24T18:42:41+08:00"
+        },
+        "app/Domain/ReconciliationService.php": {
+            "size": 805,
+            "sha256": "7ba8cb964f5334a4db1f3f3e13df4de67826a1aa9d8ff5c7078ad1b532df8c71",
+            "mtime": "2026-11-24T19:06:45+08:00"
+        },
+        "app/Domain/ReviewPolicy.php": {
+            "size": 1089,
+            "sha256": "f259c400f9be48fc220d7cf3d19088d1f797b7a5dff0e583eb2ee0391489759f",
+            "mtime": "2026-11-25T09:58:45+08:00"
+        },
+        "app/Domain/SettlementService.php": {
+            "size": 1921,
+            "sha256": "4177ea0ce3f0074757ead76370e7800fbcefe5a1c989f6c59e48fb6599914820",
+            "mtime": "2026-11-24T19:02:39+08:00"
+        },
+        "app/Domain/SqlMigrationInspector.php": {
+            "size": 2055,
+            "sha256": "c6ebce1d0d6df32770eddb3a53a082454d58ae1e5c416d8e8a7e45f0d89cacb8",
+            "mtime": "2026-11-24T19:07:52+08:00"
+        },
+        "app/Domain/StateMachine.php": {
+            "size": 2985,
+            "sha256": "45e2af4907d1a81258c55ef5f39291a7314b6d9fb525766909c53bad976a59cd",
+            "mtime": "2026-11-24T19:06:45+08:00"
+        },
+        "app/Infra/Database.php": {
+            "size": 1033,
+            "sha256": "1559e51678a542b1cb65e1da33429448770deb045f5d3812cd3db5ce5909ba84",
+            "mtime": "2026-11-24T18:50:11+08:00"
+        },
+        "app/Repository/ApiTokenRepository.php": {
+            "size": 2359,
+            "sha256": "bf6368d1407953461c66b26ae5e0aeefd7993188fa3b99fcd4f9d1d0572d5c09",
+            "mtime": "2026-11-25T10:16:18+08:00"
+        },
+        "app/Repository/CatalogRepositoryFactory.php": {
+            "size": 904,
+            "sha256": "79f94d8efffcd7b4a098194545fd36ea7b6a029f90812c85e04914d8e4e21953",
+            "mtime": "2026-11-24T19:20:46+08:00"
+        },
+        "app/Repository/DemoMaterialRepository.php": {
+            "size": 384,
+            "sha256": "7830f70efb417ecafb37503b62d2bab14d24c3ba3466cec99a8f71cd5aad2041",
+            "mtime": "2026-11-24T18:50:11+08:00"
+        },
+        "app/Repository/MaterialRepository.php": {
+            "size": 243,
+            "sha256": "01802e119b3821191194131d6d3a59846ebd68748b69eaa62f6cf5ad899402c5",
+            "mtime": "2026-11-24T18:50:11+08:00"
+        },
+        "app/Repository/OrderRepository.php": {
+            "size": 333,
+            "sha256": "14eda5c04911d175d423634ac7068b507e700f43c4da326f07bf87a6958bb7ed",
+            "mtime": "2026-11-24T19:05:12+08:00"
+        },
+        "app/Repository/PdoAuthRepository.php": {
+            "size": 1896,
+            "sha256": "a370f66f55c108989a2c83e5da1718a46aefc4f4dcf2b2a912aa9334487fff4f",
+            "mtime": "2026-11-24T19:29:44+08:00"
+        },
+        "app/Repository/PdoCommerceRepository.php": {
+            "size": 3774,
+            "sha256": "b13f0f5de03543c175cfbbece43391532a913dd453eb81ac8b99843782b2d865",
+            "mtime": "2026-11-25T10:06:34+08:00"
+        },
+        "app/Repository/PdoCommissionRuleRepository.php": {
+            "size": 3140,
+            "sha256": "896463d0c5118f90024e7ac184832363b83255b6b330d427b3a4e1c99219b0d8",
+            "mtime": "2026-11-25T10:14:35+08:00"
+        },
+        "app/Repository/PdoCreditRepository.php": {
+            "size": 8942,
+            "sha256": "37f07c7f72e45d5f4edc48d36a65e00d37cbe906e85411e8256b381e4bdce041",
+            "mtime": "2026-11-25T10:02:32+08:00"
+        },
+        "app/Repository/PdoListingRepository.php": {
+            "size": 3153,
+            "sha256": "7a9f58c19eb54467c29497666aebce3ca648f72bb3d9fb867056bce5588aa2f8",
+            "mtime": "2026-11-25T09:42:29+08:00"
+        },
+        "app/Repository/PdoListingReview.php": {
+            "size": 3242,
+            "sha256": "1358b44e830710084cda899cfde99b40976c666f83430b3f4949b9a438435ae0",
+            "mtime": "2026-11-24T19:38:00+08:00"
+        },
+        "app/Repository/PdoListingWriter.php": {
+            "size": 5815,
+            "sha256": "87f643dbe92a4d2ce0cbf9749d08592396590d792f55d02e477e034e0d61fc6a",
+            "mtime": "2026-11-24T19:43:01+08:00"
+        },
+        "app/Repository/PdoMaterialImageRepository.php": {
+            "size": 4409,
+            "sha256": "ba61344dbc1670f8af5c5496431062298d61b4fb39bfe0698982846a48530a03",
+            "mtime": "2026-11-25T10:09:09+08:00"
+        },
+        "app/Repository/PdoMaterialRepository.php": {
+            "size": 1751,
+            "sha256": "1700dfee0112bc9ae92339091167ca34d1e3db2d6c384132c30f530caee22db7",
+            "mtime": "2026-11-24T18:59:42+08:00"
+        },
+        "app/Repository/PdoMerchantKycRepository.php": {
+            "size": 3456,
+            "sha256": "0e28555748fa92059baa3d963977976763f9b600c2df93792185ad35beee74aa",
+            "mtime": "2026-11-25T10:04:22+08:00"
+        },
+        "app/Repository/PdoOrderRepository.php": {
+            "size": 3680,
+            "sha256": "65b1522c56d7723aba26e3526ed17530b45fcd47649b204c50b6482b95dddebd",
+            "mtime": "2026-11-24T19:05:12+08:00"
+        },
+        "app/Repository/PdoReviewRepository.php": {
+            "size": 10787,
+            "sha256": "0dd2d1211445bbcb7dde6f569ef9a5f7cd626d88c140bd666dae9df0f4196d1b",
+            "mtime": "2026-11-25T10:00:06+08:00"
+        },
+        "app/Repository/PdoSandboxPaymentRepository.php": {
+            "size": 6842,
+            "sha256": "1dcb11900e560eaebb6ead70245b4dacfcc73d4d0fc3ebe7f00639c0863dfe47",
+            "mtime": "2026-11-25T10:12:52+08:00"
+        },
+        "app/Repository/PdoSellerListingRepository.php": {
+            "size": 2569,
+            "sha256": "189111f94a34bfce0375be9090c1aa838428e006dd149ef7813326a13bf3652b",
+            "mtime": "2026-11-25T10:08:47+08:00"
+        },
+        "app/Repository/PdoStoreRepository.php": {
+            "size": 3739,
+            "sha256": "2acf3a532527a1a4235973db15fef0e08cd51dedbf44b737467789e507edefd9",
+            "mtime": "2026-11-25T10:06:34+08:00"
+        },
+        "app/Router.php": {
+            "size": 38619,
+            "sha256": "f3a5baab7c7cc97c0a29f798a8dc2ea63962fa7a50c772df85d08d7baa4301d9",
+            "mtime": "2026-11-25T10:16:39+08:00"
+        },
+        "app/Security/ApiAuth.php": {
+            "size": 2174,
+            "sha256": "f10b86aca203df4d02a6a10fea0034265b896743481b26c1e4fb7c92b921ee75",
+            "mtime": "2026-11-25T10:16:24+08:00"
+        },
+        "app/Security/ApiAuthException.php": {
+            "size": 256,
+            "sha256": "95e43cf4a12fe0da1429a0a529be155c20b900f77c47b0509d7b749710a97d3a",
+            "mtime": "2026-11-25T10:16:18+08:00"
+        },
+        "app/Security/ApiRateLimiter.php": {
+            "size": 1052,
+            "sha256": "528bb89172550a67b7fc590829a71786fba9bd859b6764eea08e7b857f6c4931",
+            "mtime": "2026-11-25T10:16:18+08:00"
+        },
+        "app/Security/Auth.php": {
+            "size": 3606,
+            "sha256": "18ae8c4569f0b976c8785279e26fce5adf29636bbf6cc0c242774b9ea16cfe12",
+            "mtime": "2026-11-24T19:39:29+08:00"
+        },
+        "app/Security/LoginThrottle.php": {
+            "size": 2545,
+            "sha256": "9b228100a323f8df0c038c5a698595ab2914d5a93dda89788392f70070691aa5",
+            "mtime": "2026-11-24T19:31:56+08:00"
+        },
+        "app/Security/MerchantContext.php": {
+            "size": 1359,
+            "sha256": "d813f4f23d986ecb5e8b3e2e06188edaa0d148253de8c46940a95bae04af5bfc",
+            "mtime": "2026-11-25T10:08:43+08:00"
+        },
+        "app/Security/Rbac.php": {
+            "size": 1488,
+            "sha256": "17f1fba22132bbbca208cf4093d3df6b4df88336db7ab4e8cb0024de7ac16c35",
+            "mtime": "2026-11-24T18:52:07+08:00"
+        },
+        "app/Storage/BomUploadService.php": {
+            "size": 2272,
+            "sha256": "4e377c9628ff7c1df4f7b0f799605461e3dc6d2ddf412f469442180309c85236",
+            "mtime": "2026-11-24T18:57:46+08:00"
+        },
+        "app/Storage/ImageStorage.php": {
+            "size": 171,
+            "sha256": "820107dacb04588e601a042874180901f5ab077b81776a5e8e6268e1d0938745",
+            "mtime": "2026-11-25T10:06:28+08:00"
+        },
+        "app/Storage/ImageUploadService.php": {
+            "size": 2226,
+            "sha256": "60498b005a62f76d0e22e41a29c8d5d94c4700ad8ba74823a678afbe860fde30",
+            "mtime": "2026-11-25T10:06:34+08:00"
+        },
+        "app/Storage/LocalImageStorage.php": {
+            "size": 1141,
+            "sha256": "5580447b37662c3a1aec6e136bbceb115d7cde067758cb4d981595ea9a5c33da",
+            "mtime": "2026-11-25T10:06:28+08:00"
+        },
+        "app/Storage/LocalStorage.php": {
+            "size": 1024,
+            "sha256": "a41e3d154ef6a76e9df0a6a8afbfeab083689d8850f57f169a5427d8c8f695f9",
+            "mtime": "2026-11-24T18:57:46+08:00"
+        },
+        "app/Storage/Storage.php": {
+            "size": 211,
+            "sha256": "af4ed3d3220e5873aebd7f202f91e47a7f497d08464fd82e909ef6391b3e466e",
+            "mtime": "2026-11-24T18:57:46+08:00"
+        },
+        "app/bootstrap.php": {
+            "size": 4386,
+            "sha256": "b0a5c3abf381e3f4309de84a60f47fbb0627a4de13a3621075fab3993a0823e1",
+            "mtime": "2026-11-24T19:44:10+08:00"
+        },
+        "bin/checkpoint.php": {
+            "size": 8323,
+            "sha256": "f2dda658a4fed48c955034b7354fb816668761c912662a73c5752cf92554d927",
+            "mtime": "2026-11-24T19:36:58+08:00"
+        },
+        "bin/db-backup.php": {
+            "size": 1970,
+            "sha256": "547751b5995ba43b44383d6eaa03687168a3d41b3de571c0f3fe18227ea2b4f1",
+            "mtime": "2026-11-25T10:18:56+08:00"
+        },
+        "bin/db-check.php": {
+            "size": 1054,
+            "sha256": "e05536ed407042cbca2baf4b29387b4c7a33efb1293f8652177df71a5e1a3e46",
+            "mtime": "2026-11-24T18:50:11+08:00"
+        },
+        "bin/db-status.php": {
+            "size": 2199,
+            "sha256": "37d4501603fc45ebc676f70d8d9a63f5455da492a38a083b0fdac35601f3cca0",
+            "mtime": "2026-11-24T19:18:26+08:00"
+        },
+        "bin/dev-db.php": {
+            "size": 1483,
+            "sha256": "6bde668c116df57cbd4c99423db4e28da78ccb4c73eff4b8913fe2adfbcbc368",
+            "mtime": "2026-11-24T18:59:42+08:00"
+        },
+        "bin/healthcheck.php": {
+            "size": 2110,
+            "sha256": "75526b6e26c2624a795ad901b4bf4c4709beeb118ba0a1e8fa44d04f4e314340",
+            "mtime": "2026-11-25T10:19:40+08:00"
+        },
+        "bin/mapping-audit.php": {
+            "size": 2074,
+            "sha256": "6d002d798a0714040bf09f7fe87ce0e1aff5964a184273c77a08133bb3739571",
+            "mtime": "2026-11-25T10:11:18+08:00"
+        },
+        "bin/migration-audit.php": {
+            "size": 1292,
+            "sha256": "ff6ff37ac3969c5eadd73e19e93645d246a933c71afda2f1e578b5d474cca0d5",
+            "mtime": "2026-11-24T19:07:52+08:00"
+        },
+        "bin/migration-plan.php": {
+            "size": 2166,
+            "sha256": "a7ad414d2250b4feb87475e432c039eeeeff8164509f03848702e1ac0f70adbc",
+            "mtime": "2026-11-24T19:11:59+08:00"
+        },
+        "bin/migration-run.php": {
+            "size": 4238,
+            "sha256": "71689cf955218df694600d962f909adba0f2003dbda006581e17efeab3a0b2d3",
+            "mtime": "2026-11-24T19:14:05+08:00"
+        },
+        "bin/release-check.php": {
+            "size": 4111,
+            "sha256": "9098b118deffaff0d049af46870bf8840f711915c45ced0086f33d50f4889f80",
+            "mtime": "2026-11-25T10:23:43+08:00"
+        },
+        "bin/schema-rebuild.php": {
+            "size": 4167,
+            "sha256": "e4ce1849e13eb262421a4b8e4bc96b6973da244dcf8bbe29e161f1cdb73802a5",
+            "mtime": "2026-11-25T10:20:51+08:00"
+        },
+        "bin/seed-api-token.php": {
+            "size": 473,
+            "sha256": "d70c3e22aafde90d0e0fc13e073dff4a9340a069c107e14fce492a18c9119772",
+            "mtime": "2026-11-25T10:16:46+08:00"
+        },
+        "bin/seed-auth.php": {
+            "size": 2205,
+            "sha256": "813465c703702a0a18144e4559a6a7138ddcfada2841cb238ed1a10e7be23a68",
+            "mtime": "2026-11-24T19:28:40+08:00"
+        },
+        "bin/seed-commission.php": {
+            "size": 1082,
+            "sha256": "14f959894068e9f43bf19c21991de4530b67608a05907d528a82d05b73b2cfa6",
+            "mtime": "2026-11-25T10:14:46+08:00"
+        },
+        "bin/seed-reputation.php": {
+            "size": 13000,
+            "sha256": "2c3d7f8e2f2516b168e15c8a2c124aee52c36829f2ebc3e73853d057a3ee0507",
+            "mtime": "2026-11-25T10:04:10+08:00"
+        },
+        "bin/snapshot.php": {
+            "size": 3630,
+            "sha256": "cac02e3ae8ac9032ee68013016684c7416dfe884163803431590c990d2ba46b9",
+            "mtime": "2026-11-24T18:41:02+08:00"
+        },
+        "bin/status.php": {
+            "size": 2124,
+            "sha256": "22d41e24c4ce446828cc8fc7a1b8a6ff4bb2d90690a119313b2db098a24656a8",
+            "mtime": "2026-11-24T19:46:29+08:00"
+        },
+        "bin/verify.php": {
+            "size": 16652,
+            "sha256": "6ea23973259ed1c1013d42fe76fcc6d0963da7244ef3518418856d5245b33672",
+            "mtime": "2026-11-25T10:23:43+08:00"
+        },
+        "config/app.php": {
+            "size": 687,
+            "sha256": "d17369bd0b0d1b592896513058a7689a86311d39d8f4eaae0ff29ad8d2525efd",
+            "mtime": "2026-11-24T18:32:47+08:00"
+        },
+        "config/database.php": {
+            "size": 576,
+            "sha256": "2a3db02641519d5cfa629d40e7addad989af306f6916ebe7bd2296a63504b843",
+            "mtime": "2026-11-24T19:20:46+08:00"
+        },
+        "database/007_commerce.sql": {
+            "size": 3636,
+            "sha256": "6819969ad3077e34aa2c6694ee2df899d54917d71516d5401abc2647d4bdd480",
+            "mtime": "2026-11-25T09:33:00+08:00"
+        },
+        "database/008_reputation.sql": {
+            "size": 6287,
+            "sha256": "3aaa2f04ea5bf1b801480c70bc9cc40232c4818f7b5ae825be8aad5c6cf219e8",
+            "mtime": "2026-11-25T09:59:59+08:00"
+        },
+        "database/009_merchant_kyc.sql": {
+            "size": 1248,
+            "sha256": "567a51d6631d44d7a1aedbbac4e13463abbe6fdd2d03056dff3a42aff674f330",
+            "mtime": "2026-11-25T10:04:02+08:00"
+        },
+        "database/010_material_image.sql": {
+            "size": 314,
+            "sha256": "0ac2cdeeb6418d054c44bd96f0b23fda792b8722ce21467f8bcecf17c3287896",
+            "mtime": "2026-11-25T10:06:20+08:00"
+        },
+        "database/011_sandbox_payment.sql": {
+            "size": 2724,
+            "sha256": "7a53e086e107f32047a189292ede823ddea9d753aa220ea5df14480adc7bbaa6",
+            "mtime": "2026-11-25T10:12:39+08:00"
+        },
+        "database/012_commission_version.sql": {
+            "size": 358,
+            "sha256": "b514c19db459b5f6fdc80c74a5d9c92b8bcc8d05bd71e84a404885e8f1fb493d",
+            "mtime": "2026-11-25T10:14:35+08:00"
+        },
+        "database/013_api_auth.sql": {
+            "size": 1046,
+            "sha256": "3118d7195c05c9097596ffeb8911eef66242a0695a180c324903ff743543d631",
+            "mtime": "2026-11-25T10:16:10+08:00"
+        },
+        "database/README.md": {
+            "size": 371,
+            "sha256": "11ee814d99bb89c1e63eefd5f41f0834a0ebad92b0ad592b612791965229c727",
+            "mtime": "2026-11-24T18:50:21+08:00"
+        },
+        "database/dev-schema.sql": {
+            "size": 1147,
+            "sha256": "69eba3f8d7e3419a936ccea8434d8a6d57bc1f69dcb2225ab07a230b23c1cb6d",
+            "mtime": "2026-11-24T19:05:11+08:00"
+        },
+        "database/generated/mats_platform_next/001_master.sql": {
+            "size": 22755,
+            "sha256": "8664c7cfc071abefb590f18ea7e4a0994d13a35c04f0d62b5c525ebc7e66c2ee",
+            "mtime": "2026-11-24T19:12:12+08:00"
+        },
+        "database/generated/mats_platform_next/002_inventory.sql": {
+            "size": 10037,
+            "sha256": "ee85ba7fc8dd01953f5482eddfe58c62f3d35a7e6bab4108a7216ca4f3033e05",
+            "mtime": "2026-11-24T19:12:12+08:00"
+        },
+        "database/generated/mats_platform_next/003_listing.sql": {
+            "size": 10455,
+            "sha256": "c28cc197e092b47df6f6bcb4965b0689edae3a09fe5796df2ba9bca53b4146a8",
+            "mtime": "2026-11-24T19:12:12+08:00"
+        },
+        "database/generated/mats_platform_next/004_bom_trade.sql": {
+            "size": 31327,
+            "sha256": "6e6d7ca8ef0fa751fa7a5263d602b34f7055d2ea738b27f95bb938cee02b026c",
+            "mtime": "2026-11-24T19:12:12+08:00"
+        },
+        "database/generated/mats_platform_next/005_migration_legacy.sql": {
+            "size": 7596,
+            "sha256": "8ae63c1b94ca4fc57a06cd10e7c64f49eedeae732c360e0e0adedecbeef01f30",
+            "mtime": "2026-11-24T19:12:12+08:00"
+        },
+        "database/generated/mats_platform_next/005b_migration_templates.sql": {
+            "size": 10538,
+            "sha256": "661226cc8925d39bd3957d4935c2c85ee9bdf66d9075350f3c230aea21a20d70",
+            "mtime": "2026-11-24T19:12:12+08:00"
+        },
+        "database/generated/mats_platform_next/006_seed.sql": {
+            "size": 12229,
+            "sha256": "8b39df7dddbe20d5ed14fb5edcab34c10bdcb31cce06d90fbfaed64ceb863b05",
+            "mtime": "2026-11-24T19:12:12+08:00"
+        },
+        "database/generated/mats_platform_next2/001_master.sql": {
+            "size": 22757,
+            "sha256": "9d700764c3146a2f141b1a5af7046f4908ba3d20cce78a7acd2e84d37a24ff0f",
+            "mtime": "2026-11-24T19:14:09+08:00"
+        },
+        "database/generated/mats_platform_next2/002_inventory.sql": {
+            "size": 10038,
+            "sha256": "f52b6636ae257c8f918a6515f0f1b582a7e893b965136b1a2f49615cf064b013",
+            "mtime": "2026-11-24T19:14:09+08:00"
+        },
+        "database/generated/mats_platform_next2/003_listing.sql": {
+            "size": 10453,
+            "sha256": "a29d67c3b59e5ca67beb42560a71091d8f41d30b17784dd262442ccdd319ca30",
+            "mtime": "2026-11-24T19:14:09+08:00"
+        },
+        "database/generated/mats_platform_next2/004_bom_trade.sql": {
+            "size": 31328,
+            "sha256": "652708bed20d2af3d0f709efe176f038f271d1e2e4d6f9908ede1b79e3164ef6",
+            "mtime": "2026-11-24T19:14:09+08:00"
+        },
+        "database/generated/mats_platform_next2/005_migration_legacy.sql": {
+            "size": 7597,
+            "sha256": "4ca05c9ee285283d3e2a2ad2959b66960f3b198900ef3ed87e771ae61b1afa32",
+            "mtime": "2026-11-24T19:14:09+08:00"
+        },
+        "database/generated/mats_platform_next2/005b_migration_templates.sql": {
+            "size": 10539,
+            "sha256": "cc0ae79326962f0ef1b7e9171669431b564d9b9110a929f73b375e6784a3f9cc",
+            "mtime": "2026-11-24T19:14:09+08:00"
+        },
+        "database/generated/mats_platform_next2/006_seed.sql": {
+            "size": 12230,
+            "sha256": "257cf119fc7fbd2118ffce0face785073170bd781e82326cecaa275cac983318",
+            "mtime": "2026-11-24T19:14:09+08:00"
+        },
+        "deploy/README.md": {
+            "size": 1912,
+            "sha256": "58a6687089d8065a950596269411298f6d5cc6c316f1e43093ca807201215240",
+            "mtime": "2026-11-25T10:19:51+08:00"
+        },
+        "deploy/nginx.conf.example": {
+            "size": 1778,
+            "sha256": "ae00e127826eab277fa09e47abcd2c9877e93eb45d4d2325efca001b72d8e818",
+            "mtime": "2026-11-24T19:44:10+08:00"
+        },
+        "deploy/php-fpm-pool.conf.example": {
+            "size": 518,
+            "sha256": "e7525c165d9c6c57b0dc512d16b418cfefeec54c989759f4c2d08d151bed1cab",
+            "mtime": "2026-11-24T19:27:00+08:00"
+        },
+        "docs/10H-PLAN.md": {
+            "size": 3122,
+            "sha256": "e5e799efee1ead920e0820886320873e1630a2e3d1147ee5c1982d1b440cbd75",
+            "mtime": "2026-11-24T20:00:31+08:00"
+        },
+        "docs/10H-REVIEW.md": {
+            "size": 1989,
+            "sha256": "79e40c1781bf2ede2f049748cda33cb645edf5630ead0e2c6f24da915b906259",
+            "mtime": "2026-11-24T19:56:21+08:00"
+        },
+        "docs/A11Y-PERF.md": {
+            "size": 1440,
+            "sha256": "f589ce677e0ba8a0b2ba60544b10269fa0b97d2da4acb15c3bfb69ceb0a8ec9a",
+            "mtime": "2026-11-25T10:17:56+08:00"
+        },
+        "docs/ACCEPTANCE.md": {
+            "size": 2946,
+            "sha256": "421003706547875a8ac70f46744d6c09ffefad1b8b3d17a88335fdd13a02df8c",
+            "mtime": "2026-11-25T10:24:50+08:00"
+        },
+        "docs/API-AUTH.md": {
+            "size": 958,
+            "sha256": "c86a367cd8871aad2568699e426a2aba71a185f1cdc38e9e1a63a99cae357312",
+            "mtime": "2026-11-25T10:16:42+08:00"
+        },
+        "docs/API.md": {
+            "size": 2472,
+            "sha256": "449cc3014e5744896fb59d8ef45b07399923d2ba7e9aefe1a7d86609ed8f6577",
+            "mtime": "2026-11-24T19:03:05+08:00"
+        },
+        "docs/AUTH-DB.md": {
+            "size": 1678,
+            "sha256": "824cd61b7ad7b479ae761be4b0460bf85ea11deef617e2243168261a989d151e",
+            "mtime": "2026-11-24T19:32:18+08:00"
+        },
+        "docs/BACKUP.md": {
+            "size": 1377,
+            "sha256": "0ea373b5dd5b6b13b48cf77c33379f772e77b5349cab742456110f3f265e3dbb",
+            "mtime": "2026-11-25T10:19:48+08:00"
+        },
+        "docs/BASELINE.md": {
+            "size": 3242,
+            "sha256": "17197ad1533ba896a201848f23d94963731354d18b1a35265ede9c17803020ab",
+            "mtime": "2026-11-24T18:40:44+08:00"
+        },
+        "docs/BOM-PARSER.md": {
+            "size": 1660,
+            "sha256": "08fcb32437ed0d00a2c828263cbf0af6bc74cf27158f18c2313641ea2e00498b",
+            "mtime": "2026-11-24T18:56:12+08:00"
+        },
+        "docs/BUSINESS-ALIGNMENT.md": {
+            "size": 4373,
+            "sha256": "568b8f564c5c85910ca72f135581cee79d110269b390b9a6897f518119e4da20",
+            "mtime": "2026-11-24T18:45:54+08:00"
+        },
+        "docs/CATALOG-SOURCE.md": {
+            "size": 1401,
+            "sha256": "238ad46253ee398479cd67d53df869e57a3968c5f5471667e44b34ef3811fbe6",
+            "mtime": "2026-11-24T19:35:11+08:00"
+        },
+        "docs/CHANGE-PROTOCOL.md": {
+            "size": 1917,
+            "sha256": "3d8957d1daa354ba4ba463f5692265c36df91f867cde62888cd402fc408923a5",
+            "mtime": "2026-11-24T18:41:18+08:00"
+        },
+        "docs/CLOSURE-REPORT.md": {
+            "size": 9993,
+            "sha256": "42f021ff770d87fb294cceadfc01b65139da66d90e06fbeb6a4702f8bcec6ff8",
+            "mtime": "2026-11-25T10:24:50+08:00"
+        },
+        "docs/CODE-MAP.md": {
+            "size": 3391,
+            "sha256": "58b56facded32850ba8819afd26c474be173c04e6f93c07dedef14224a016a8e",
+            "mtime": "2026-11-24T18:41:18+08:00"
+        },
+        "docs/COMMISSION.md": {
+            "size": 1307,
+            "sha256": "ca77a960123f9c74fd9d259fa158bc10f0f4532231729d094319dc70b23b9302",
+            "mtime": "2026-11-25T10:15:18+08:00"
+        },
+        "docs/DATA-LAYER.md": {
+            "size": 2141,
+            "sha256": "d4501d4feb500da5a8738df243f4de0e82a24de09aa300c5136785435b407b38",
+            "mtime": "2026-11-24T19:05:33+08:00"
+        },
+        "docs/DB-STATUS.md": {
+            "size": 1162,
+            "sha256": "a928186848363dbacdf219704c36c3147280f34c3c46cb6c0ab43aead290b417",
+            "mtime": "2026-11-25T10:17:13+08:00"
+        },
+        "docs/DEVLOG.md": {
+            "size": 35786,
+            "sha256": "3382328bff383fdaee53775dcd526ae07f20ac505cfc0203784147623ff0468e",
+            "mtime": "2026-11-25T10:24:58+08:00"
+        },
+        "docs/E2E.md": {
+            "size": 1005,
+            "sha256": "f2d9a174bd2d5de1babd42954897a843c42a828b3fe922b14bb1b331cc7fa6af",
+            "mtime": "2026-11-24T19:17:29+08:00"
+        },
+        "docs/FIELD-MAPPING.md": {
+            "size": 3232,
+            "sha256": "b513e8ccf8f721b1920566e7b225a2bf18453d0c2b79e987474ece989cecfef2",
+            "mtime": "2026-11-25T10:11:11+08:00"
+        },
+        "docs/FINANCE.md": {
+            "size": 1732,
+            "sha256": "8430f1c9bed9b1f295c33b88868117ed4dfa083e3c3cba30b26d0eba3472c589",
+            "mtime": "2026-11-24T19:04:25+08:00"
+        },
+        "docs/GIT-INTEGRITY.md": {
+            "size": 1133,
+            "sha256": "7c99159a4c69d0cce546953a31b04328105091eb491c2c0971bf7950b4ea5e5f",
+            "mtime": "2026-11-24T19:48:04+08:00"
+        },
+        "docs/IMAGE-UPLOAD.md": {
+            "size": 1087,
+            "sha256": "b80f5484e37099a76c71c4f043bf3f36241cbbb2f716d7251f189085d66bf06c",
+            "mtime": "2026-11-25T10:07:43+08:00"
+        },
+        "docs/LISTING-REPOSITORY.md": {
+            "size": 1408,
+            "sha256": "71b840c7a91f769c965b692cfaef614a9d68645515e8710aebf181248adcd32a",
+            "mtime": "2026-11-24T19:35:11+08:00"
+        },
+        "docs/MERCHANT-KYC.md": {
+            "size": 979,
+            "sha256": "94e1864951d87b218a490033f6cc0dbca7982ba5355e26618a3f7910873da587",
+            "mtime": "2026-11-25T10:05:13+08:00"
+        },
+        "docs/MIGRATION-EXECUTION.md": {
+            "size": 1984,
+            "sha256": "abd93bc5cef0efeae8f83a201c054649390b1f4fc16a28f07e41194cd0324c03",
+            "mtime": "2026-11-24T19:15:33+08:00"
+        },
+        "docs/MIGRATION-REBUILD.md": {
+            "size": 1384,
+            "sha256": "f053c669f4797ee224aba7715b51a2c3e2c080b149b207fc7f674ed4d8ab9531",
+            "mtime": "2026-11-25T10:22:17+08:00"
+        },
+        "docs/MIGRATION-REHEARSAL.md": {
+            "size": 2048,
+            "sha256": "cf4e4957b79cd4f90cbc0072a5381fa048d9b7d59a3476bf467d9e314983e684",
+            "mtime": "2026-11-24T19:11:12+08:00"
+        },
+        "docs/MIGRATION-RUNNER.md": {
+            "size": 1233,
+            "sha256": "d8029a7e27e1b6bc9e51b319521e32590a6bbc7d654633deb91f96cb7b04a591",
+            "mtime": "2026-11-24T19:12:31+08:00"
+        },
+        "docs/MIGRATION.md": {
+            "size": 3218,
+            "sha256": "3d8c55f9f181b84af428f79a59b9f3fee7c85f62785fb66ec0856c8075be56dd",
+            "mtime": "2026-11-24T19:15:33+08:00"
+        },
+        "docs/PAYMENT-CALLBACK.md": {
+            "size": 1349,
+            "sha256": "951cb4c11a4f63101b37ffc537c5ce90c45e7ccd3dc375ec3239042763815ba2",
+            "mtime": "2026-11-24T19:07:02+08:00"
+        },
+        "docs/PAYMENT-SANDBOX.md": {
+            "size": 1401,
+            "sha256": "fda97f282ee40bbdf1657d57551f0d5dc256e4c65709eb56d60d447dc39f8510",
+            "mtime": "2026-11-25T10:13:32+08:00"
+        },
+        "docs/RBAC.md": {
+            "size": 2302,
+            "sha256": "9a5013d6b2a603cfa6c4c4bc846382e1d7cb2c097bc0889c6aa9426fd89cd796",
+            "mtime": "2026-11-24T18:54:06+08:00"
+        },
+        "docs/REGRESSION.md": {
+            "size": 1331,
+            "sha256": "8f4596ea8391e34eee110316fd78dbb66540a82999a23879a1579a43f1d8c4d2",
+            "mtime": "2026-11-25T10:23:42+08:00"
+        },
+        "docs/RELEASE-CHECKLIST.md": {
+            "size": 1485,
+            "sha256": "25f2dbeaa38fa1f0b9a17623d0e1173e4714fcfbc83cbe4796e93d64aa83ce47",
+            "mtime": "2026-11-25T10:24:50+08:00"
+        },
+        "docs/REPUTATION-PLAN.md": {
+            "size": 3155,
+            "sha256": "ff98fb0c8a527319ac3cfd8a4fb6da79c5546a67d2b858ffc7f4c38173c7cf04",
+            "mtime": "2026-11-25T09:40:19+08:00"
+        },
+        "docs/RISK-REGISTER.md": {
+            "size": 2102,
+            "sha256": "47edc3485e346a5caab59447bbfed766425b13b6b087ca82a8d82b7669b3d8b9",
+            "mtime": "2026-11-25T10:24:58+08:00"
+        },
+        "docs/ROLLBACK.md": {
+            "size": 2945,
+            "sha256": "b6c22ce2515b505672e94364733363d8f8dd3abf3786bf2fd2f6e4f74626ce21",
+            "mtime": "2026-11-24T18:40:44+08:00"
+        },
+        "docs/SECURITY-PERF.md": {
+            "size": 1481,
+            "sha256": "d3eb56c3fb2c45e9e514a1c1b89b16911a512180ee5e35e219b37ffef495313f",
+            "mtime": "2026-11-24T19:44:29+08:00"
+        },
+        "docs/SELLER-REVIEW-FLOW.md": {
+            "size": 2512,
+            "sha256": "d0df98f1511f65038c4224de37210257d1eeda00bfe1b3d70b2c3f9f9d31b0f9",
+            "mtime": "2026-11-24T19:53:11+08:00"
+        },
+        "docs/STATUS.md": {
+            "size": 537,
+            "sha256": "b78d3998849ea250427de1452fa89fcc1d9de0fb7137e0bede8212e566477cac",
+            "mtime": "2026-11-24T19:46:29+08:00"
+        },
+        "docs/TASK-QUEUE.md": {
+            "size": 3168,
+            "sha256": "a849d1d34ee7514b4e70f55d42545ede9634561a13dc923f245da899c36ff2b9",
+            "mtime": "2026-11-25T10:24:50+08:00"
+        },
+        "docs/TEST-MATRIX.md": {
+            "size": 4089,
+            "sha256": "2588fbe67c0cb6eeb5d4d2f4c65163a96df555d84b1f1d696e12cd2b68fd55ee",
+            "mtime": "2026-11-25T10:23:51+08:00"
+        },
+        "docs/TRACEABILITY.md": {
+            "size": 14206,
+            "sha256": "bec511c802cf6b7273391ab131babe4c39fcb5dd998f9a79d6fee64b175e87aa",
+            "mtime": "2026-11-25T10:24:58+08:00"
+        },
+        "docs/TRADE.md": {
+            "size": 1781,
+            "sha256": "25e8f75ce138df28c8418ad6b52553fe964511bfc215e2f67cc7c5ae34f4e166",
+            "mtime": "2026-11-24T19:17:29+08:00"
+        },
+        "docs/UI-QA.md": {
+            "size": 1533,
+            "sha256": "849faf103ee36a0c02d8aba0b645297bf1d2539fc5fcd241e7234b7bd9bd0813",
+            "mtime": "2026-11-24T19:55:22+08:00"
+        },
+        "docs/UPLOAD.md": {
+            "size": 1916,
+            "sha256": "5a9d04d152fef17bdf83daf87decbfb0e1c6df058f6d8a5ced209fc32184a851",
+            "mtime": "2026-11-24T18:58:33+08:00"
+        },
+        "framework/Cui.php": {
+            "size": 2554,
+            "sha256": "d913f9e40bdf0778411714852128fa4ab45432f4c2bb451922d3f97476ade700",
+            "mtime": "2026-11-24T18:32:59+08:00"
+        },
+        "framework/CuiBottomNav.php": {
+            "size": 3092,
+            "sha256": "480bc7a7c9ac4b727f4e3c9bd5e92693b1901a9c5c9e5ec44e1fb27bd988a444",
+            "mtime": "2026-11-25T09:44:05+08:00"
+        },
+        "framework/CuiHeader.php": {
+            "size": 1613,
+            "sha256": "a62ca50582f7f971603cc118ea1b181a6623938eb33410a9317d88056ec905d7",
+            "mtime": "2026-11-24T18:52:32+08:00"
+        },
+        "framework/CuiHtml.php": {
+            "size": 1974,
+            "sha256": "c3a1494f942eb63c6c3ddaaf2e5b315f211a777080c340981ba3c153ad820fd0",
+            "mtime": "2026-11-24T18:32:47+08:00"
+        },
+        "framework/CuiIcon.php": {
+            "size": 2847,
+            "sha256": "3a4a3bc698e3258d8ac7191bfc0014e2cb21ed55285c1f20a197b8661752faf6",
+            "mtime": "2026-11-24T18:32:59+08:00"
+        },
+        "framework/CuiLayout.php": {
+            "size": 3487,
+            "sha256": "e6c40350fd5e11258ed5df0effd92802bbe01e14acc068b86ebddfa9a72d88fc",
+            "mtime": "2026-11-25T09:44:23+08:00"
+        },
+        "framework/CuiPage.php": {
+            "size": 1046,
+            "sha256": "6b3eaced4f810fa3c8bf884bb9358d9fa1ffd31892dcc1b658638f7a5968bf27",
+            "mtime": "2026-11-24T18:41:41+08:00"
+        },
+        "framework/CuiSidebar.php": {
+            "size": 4507,
+            "sha256": "771765040078197c3c2c99445ea3b664138b9f070ead8f6e7eea0c744a0d6840",
+            "mtime": "2026-11-25T10:16:42+08:00"
+        },
+        "framework/CuiTheme.php": {
+            "size": 974,
+            "sha256": "2c32b86556ee060aefe04a3d9ce6ec8d616308fd0770d169af8f657179eaf8e5",
+            "mtime": "2026-11-24T18:32:59+08:00"
+        },
+        "framework/components/CuiBadge.php": {
+            "size": 365,
+            "sha256": "0ed8a5db687ea2ace406fd5c504e1751e1b3d5a66022ba556414c8c7fcc7e6c0",
+            "mtime": "2026-11-24T18:33:15+08:00"
+        },
+        "framework/components/CuiBreadcrumb.php": {
+            "size": 642,
+            "sha256": "546f17ec3566084f8dbc5b15f3a4afa2f7cf9b0aa5944cc6fa7f35a202c49240",
+            "mtime": "2026-11-24T18:33:15+08:00"
+        },
+        "framework/components/CuiButton.php": {
+            "size": 1725,
+            "sha256": "419d50b1f75c397c4e1a6655f755ad7c9b0f44f766eb17a75722d5f35e8f292a",
+            "mtime": "2026-11-24T18:33:15+08:00"
+        },
+        "framework/components/CuiCard.php": {
+            "size": 629,
+            "sha256": "7019a53e44bf98139ebac350e4bf22e1eb2055181bfb09069aa75f4c95b934e7",
+            "mtime": "2026-11-24T18:33:15+08:00"
+        },
+        "framework/components/CuiChips.php": {
+            "size": 820,
+            "sha256": "13afe2e9276d6f731e2cfe7548fd16995c7475a1af0956422a64304e43f97d33",
+            "mtime": "2026-11-24T18:33:15+08:00"
+        },
+        "framework/components/CuiEmpty.php": {
+            "size": 496,
+            "sha256": "1e59cc03913d44bd047a788bda09faabc18fb17a901ed87239cf08f7466d658f",
+            "mtime": "2026-11-24T18:33:32+08:00"
+        },
+        "framework/components/CuiField.php": {
+            "size": 2743,
+            "sha256": "09e0308cd0bc78e8309baa9767c9ce31f796b0c9e36ef970fe06b90879662338",
+            "mtime": "2026-11-24T18:33:32+08:00"
+        },
+        "framework/components/CuiFileDrop.php": {
+            "size": 1432,
+            "sha256": "8142e21a994439bad4a482bc6b1f58e7e4f3ca8c23074aebdb0b9b3b9e667675",
+            "mtime": "2026-11-24T18:58:02+08:00"
+        },
+        "framework/components/CuiKpi.php": {
+            "size": 400,
+            "sha256": "e9bde813f8d1c74baf8bbb9fc8f2761d6c91f2bfcc6969c2105372c364e61288",
+            "mtime": "2026-11-24T18:33:47+08:00"
+        },
+        "framework/components/CuiMatchCard.php": {
+            "size": 1215,
+            "sha256": "fe41d2a860ca36fd2d68a5d0fd0b6821178a741ff99bd87d4bb0cbe24519a471",
+            "mtime": "2026-11-24T18:33:33+08:00"
+        },
+        "framework/components/CuiPageHeader.php": {
+            "size": 1026,
+            "sha256": "13f5e393de838c6913e5bd791ad820f2c998a28b41227e47fe6b84f316cbc6d4",
+            "mtime": "2026-11-24T18:33:15+08:00"
+        },
+        "framework/components/CuiProductCard.php": {
+            "size": 1646,
+            "sha256": "222c934bd5d65abd610506f14616352a5a47e3ac09af577ff94e4277a9b94181",
+            "mtime": "2026-11-25T09:43:17+08:00"
+        },
+        "framework/components/CuiQcItem.php": {
+            "size": 1035,
+            "sha256": "3c1ec152069e7e10177b6e7967b3f011be36e1f71bd4e87e95be65e0f233602a",
+            "mtime": "2026-11-24T18:33:47+08:00"
+        },
+        "framework/components/CuiStat.php": {
+            "size": 302,
+            "sha256": "6928adf9159332cbe1268ad9b76d41873dc987b1beb1b44665035d4e55d1333d",
+            "mtime": "2026-11-24T18:33:15+08:00"
+        },
+        "framework/components/CuiStepper.php": {
+            "size": 756,
+            "sha256": "bb64f68c334f5556bca0b7f0f904c4ff7a699eca195065a7fb72a433bf8fe24b",
+            "mtime": "2026-11-24T18:33:33+08:00"
+        },
+        "framework/components/CuiTable.php": {
+            "size": 1938,
+            "sha256": "610df9ee70db1586562a5855cf93ee5a8922bdb9397d7246355a277431ad90b9",
+            "mtime": "2026-11-24T18:33:32+08:00"
+        },
+        "framework/components/CuiUploader.php": {
+            "size": 1711,
+            "sha256": "61c4a241253d542707ac68b42680a65d27e3a997461d1f6e16e429a06b12d240",
+            "mtime": "2026-11-24T18:33:47+08:00"
+        },
+        "public/.htaccess": {
+            "size": 138,
+            "sha256": "6737e9da51d830872bcb5f10a97488e7ebb364a57650f58255e918e0138c48a3",
+            "mtime": "2026-11-24T18:35:36+08:00"
+        },
+        "public/assets/css/app.css": {
+            "size": 32137,
+            "sha256": "0bf51a90197d65169cdf3b89efaf328896afce7944d18a86161b2ccdd9e7c03c",
+            "mtime": "2026-11-25T10:02:51+08:00"
+        },
+        "public/assets/img/materials/m1.svg": {
+            "size": 872,
+            "sha256": "f49679e4d15f04487cf39201137068cd6800a142f545934a760f02bc6275b41d",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/img/materials/m2.svg": {
+            "size": 864,
+            "sha256": "fb8c4d8bcfce72a594b39677a1903ac0e7614b624712fddffce2c3078e9ddfa4",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/img/materials/m3.svg": {
+            "size": 867,
+            "sha256": "84c991d6f51650db1fa660b8a5cfa84ee44a7d5788e00c4011f2e18177572b04",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/img/materials/m4.svg": {
+            "size": 868,
+            "sha256": "13e127b988d868737e2e896591d7048f75999961315a4ae84080faa22f6afe11",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/img/materials/m5.svg": {
+            "size": 867,
+            "sha256": "4723500295745a7b5df1d5009b9cb5449a575d46be7282265a9fb77b4d6ed628",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/img/materials/m6.svg": {
+            "size": 859,
+            "sha256": "3ea0c115e6b8139685ff7c0a1c4f34ce80bc874a36547181979eef9a7a4a9743",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/img/materials/m7.svg": {
+            "size": 865,
+            "sha256": "73f7f3eac63c63f31d393798cd9d84a665ca4b53a695939f79c3695587c8fc0f",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/img/merchants/hqb.svg": {
+            "size": 533,
+            "sha256": "f08df03d26a8bfddf4e3acea042d82fefac7990275b278ce593c8bcf68996c21",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/img/merchants/suzhou.svg": {
+            "size": 532,
+            "sha256": "d47fbae30b12f3fa8a40ee3141a6a2fe38ddbcafb2e95bb04283fffca27d56f1",
+            "mtime": "2026-11-25T09:44:32+08:00"
+        },
+        "public/assets/js/app.js": {
+            "size": 3822,
+            "sha256": "e8bc1f9a16e6973151a49bfe49c584882b20512b6f1bdbfe7c3f23ae3381bedf",
+            "mtime": "2026-11-24T18:45:05+08:00"
+        },
+        "public/assets/js/commerce.js": {
+            "size": 849,
+            "sha256": "c206fe92c8d29ba332101a690e7d5b4406a32a1f34092dc70a1a7eef4b241385",
+            "mtime": "2026-11-25T09:44:23+08:00"
+        },
+        "public/index.php": {
+            "size": 105,
+            "sha256": "ff11a00d6a8d9cff8bf0b9550e8f927e79f93fcda7fff13a5f73b9012fe858c5",
+            "mtime": "2026-11-24T18:35:36+08:00"
+        },
+        "public/router.php": {
+            "size": 406,
+            "sha256": "ec558c1dcfa53839ec5b1379de4c217f6b23b48a76e572bc269e47775e945b41",
+            "mtime": "2026-11-24T18:35:36+08:00"
+        },
+        "public/uploads/materials/2026/11/b438f04b29d211efc16b.png": {
+            "size": 177,
+            "sha256": "e4f87503ab2b186d75e769c9b802e28b8fef26b57a1310fea82432b06e2fb5e2",
+            "mtime": "2026-11-25T10:07:18+08:00"
+        },
+        "tests/a11y.php": {
+            "size": 1725,
+            "sha256": "e52d053949247291c29cc5774fa570fa41317b803b300cbf1db9de62b1d83cd5",
+            "mtime": "2026-11-25T10:17:49+08:00"
+        },
+        "tests/api-auth.php": {
+            "size": 2546,
+            "sha256": "28d0ad1437a4e797d5eb2afdd75e69b57e537ef85d94a2d01a3b9c9271ca3efe",
+            "mtime": "2026-11-25T10:16:29+08:00"
+        },
+        "tests/api.php": {
+            "size": 5233,
+            "sha256": "f0eec45bc5eafeeb03b0bf7bb2f38cb09d73186b6c653e09feeae2834c85082e",
+            "mtime": "2026-11-24T19:02:54+08:00"
+        },
+        "tests/auth-db-live.php": {
+            "size": 1795,
+            "sha256": "754df58931f54d5df181397b60c9cdc0424975e2a78fa84cbe55ef2709be7e0c",
+            "mtime": "2026-11-24T19:28:54+08:00"
+        },
+        "tests/auth-db.php": {
+            "size": 2734,
+            "sha256": "b6298cc1660bb9dba752c1358ea5072fe732140f05fc6a528cce59b3b91f7f7c",
+            "mtime": "2026-11-24T19:29:03+08:00"
+        },
+        "tests/auth.php": {
+            "size": 2448,
+            "sha256": "797547343df06d13fb940f042be83d87a9fa67e5d49ab8ae94c2bcdec84f068b",
+            "mtime": "2026-11-24T19:39:35+08:00"
+        },
+        "tests/bom.php": {
+            "size": 2307,
+            "sha256": "c6affcf8f12a4ca40dcdd901a86c4a1677ac82c5224cfc08d9b5981bc89841c1",
+            "mtime": "2026-11-24T18:55:50+08:00"
+        },
+        "tests/catalog-detail.php": {
+            "size": 1514,
+            "sha256": "c38b3ad8428fe075c034bb4939c11a7601db3a652478e86df8740f04712a70f8",
+            "mtime": "2026-11-24T19:23:17+08:00"
+        },
+        "tests/catalog-source.php": {
+            "size": 1469,
+            "sha256": "07b734c334be2baa4226ea2685049b0baea9a6670c6e798c36a928846e49131a",
+            "mtime": "2026-11-24T19:20:51+08:00"
+        },
+        "tests/comment-tree.php": {
+            "size": 2907,
+            "sha256": "1e16ebf5e6119fa9eb68c935d922a68aa979a6e66a5e06856d9daa5c739c5fc9",
+            "mtime": "2026-11-25T09:46:07+08:00"
+        },
+        "tests/commission.php": {
+            "size": 2892,
+            "sha256": "614d1a1634d5fa1fa47ce9d94c455a87885bef5b61a92d3da9f1578976d3cbee",
+            "mtime": "2026-11-25T10:14:40+08:00"
+        },
+        "tests/credit-history.php": {
+            "size": 1486,
+            "sha256": "3b0671bf4bd621d65135f887b16d8782580b569858d5c6a9789cc905a332a12e",
+            "mtime": "2026-11-25T10:02:23+08:00"
+        },
+        "tests/credit.php": {
+            "size": 2488,
+            "sha256": "26dd036b386baa167779f045132a9a8724840833501a8305d12b344ad16c9b95",
+            "mtime": "2026-11-25T09:40:50+08:00"
+        },
+        "tests/data-isolation.php": {
+            "size": 2196,
+            "sha256": "28ad2c7bc368d6fb9314e5ebd3cb496fce7137c50cea094df5629de9414fa811",
+            "mtime": "2026-11-25T10:08:43+08:00"
+        },
+        "tests/db-live.php": {
+            "size": 2390,
+            "sha256": "f1ad289cbb3e2024b0906340ac99fcc7e53b611880badb8332d2db0178320d53",
+            "mtime": "2026-11-25T10:17:01+08:00"
+        },
+        "tests/db.php": {
+            "size": 1501,
+            "sha256": "9e6d8bebe96e87b6f18dd1e28ab539c8914809c7cd86f4b24d7aa932b232a2c4",
+            "mtime": "2026-11-24T19:22:21+08:00"
+        },
+        "tests/deploy.php": {
+            "size": 2171,
+            "sha256": "75a21a96ca81346089cb208499370ff5128dfd455fe00cb7cf5046b8e83859ef",
+            "mtime": "2026-11-25T10:19:48+08:00"
+        },
+        "tests/e2e.php": {
+            "size": 6158,
+            "sha256": "1c4187469d2737ed1be738a248bb74665baabc6952674298c3dc604d6997bf2f",
+            "mtime": "2026-11-24T19:17:18+08:00"
+        },
+        "tests/field-mapping.php": {
+            "size": 1544,
+            "sha256": "1e6cb2fbdac632c2af9d3febc474b8adf1f651d406cf577e6466714d6053ec64",
+            "mtime": "2026-11-25T10:10:59+08:00"
+        },
+        "tests/finance.php": {
+            "size": 3657,
+            "sha256": "cc4d8c9a1f0780ff72712fa48cf6e413baa70025e18d6af173514d8b48b7cfd0",
+            "mtime": "2026-11-24T19:04:13+08:00"
+        },
+        "tests/image-upload.php": {
+            "size": 2748,
+            "sha256": "58e6565eba418bd5005c735df989f5973ebeeff84386478a525aa1d760defa8f",
+            "mtime": "2026-11-25T10:06:45+08:00"
+        },
+        "tests/listing-repo-live.php": {
+            "size": 2105,
+            "sha256": "480bb16cc7a039b6dc22f8d191f47ad8121471c19f072d40004273e3d1684d1b",
+            "mtime": "2026-11-24T19:21:26+08:00"
+        },
+        "tests/listing-repo.php": {
+            "size": 2657,
+            "sha256": "f98b617390d2691340202eb0ffca983b0bccd9a88815e5ba5fbc19f92283e213",
+            "mtime": "2026-11-25T09:48:00+08:00"
+        },
+        "tests/listing-review.php": {
+            "size": 3107,
+            "sha256": "a7f982c788f89cbb73a95b71c0657a38c03081a50b0d0ebbc17481c553bebedb",
+            "mtime": "2026-11-24T19:39:35+08:00"
+        },
+        "tests/listing-writer.php": {
+            "size": 4073,
+            "sha256": "bbc2f1914d6b21e2ae831e061ea67506c2d803829dae82f30a2e6ec53f2a1ed2",
+            "mtime": "2026-11-24T19:43:06+08:00"
+        },
+        "tests/merchant-kyc.php": {
+            "size": 2599,
+            "sha256": "d5fb6bae56f3ba0a47008e5e162ad36db06915a76aa14c02b7465162b324841e",
+            "mtime": "2026-11-25T10:04:22+08:00"
+        },
+        "tests/migration-extended.php": {
+            "size": 1640,
+            "sha256": "67d01bfe9223495d6fabc81c5c0a92baf669576191e1e957c2f1de2dc56f567f",
+            "mtime": "2026-11-25T10:20:51+08:00"
+        },
+        "tests/migration-runner.php": {
+            "size": 2362,
+            "sha256": "415b0ecb1579e5f6bc09de9027fff63aa4ad2a5ac7c56b87b877e63b9028b23f",
+            "mtime": "2026-11-24T19:15:18+08:00"
+        },
+        "tests/migration.php": {
+            "size": 2479,
+            "sha256": "719b37b90077e33472528d206ec0b62125757038aab74220e6bea960b27cd681",
+            "mtime": "2026-11-24T19:08:10+08:00"
+        },
+        "tests/order-presenter.php": {
+            "size": 1884,
+            "sha256": "086e80dbd48961fdba060f1f639be5e264e1047f808e9bc924e7fe1f22f5d92b",
+            "mtime": "2026-11-24T19:31:00+08:00"
+        },
+        "tests/order-repo.php": {
+            "size": 2273,
+            "sha256": "364eed832f0f091a97c46fed863b90a3a9764023fd84683a434e1c8caac6a53f",
+            "mtime": "2026-11-24T19:05:17+08:00"
+        },
+        "tests/payment-callback.php": {
+            "size": 4269,
+            "sha256": "af4986fab0a396f8ca4afc6a5dd9ded5f7b2bc851c9f773cf14f1a68b64d5fe0",
+            "mtime": "2026-11-24T19:06:52+08:00"
+        },
+        "tests/payment-sandbox.php": {
+            "size": 2759,
+            "sha256": "7ca78c1313e5f70acbf7e184d7a4b1309f94ebc15093e1aeb729cc4ededb5cf1",
+            "mtime": "2026-11-25T10:12:58+08:00"
+        },
+        "tests/pdo.php": {
+            "size": 2088,
+            "sha256": "31ada900941aa64fe33d64f34efb506c4057b47635df3fe5bfffb813abfcbc3f",
+            "mtime": "2026-11-24T18:59:47+08:00"
+        },
+        "tests/perf.php": {
+            "size": 1706,
+            "sha256": "4d8885d3a59783b75a68587d62dc90d6921e1c8426964a6a3044baaab7a1a43d",
+            "mtime": "2026-11-24T19:24:26+08:00"
+        },
+        "tests/regression.php": {
+            "size": 3501,
+            "sha256": "6b8740b29fef28729b94b9fa94bcdb81accccbf224cc7fc004d4860d405fbe41",
+            "mtime": "2026-11-25T10:23:34+08:00"
+        },
+        "tests/reputation-live.php": {
+            "size": 3481,
+            "sha256": "efd4d8460d439c2bcd0cb3d60468cd7e74bfb655f1e8f957205deeadef2ec4ad",
+            "mtime": "2026-11-25T10:13:27+08:00"
+        },
+        "tests/review-moderation.php": {
+            "size": 2762,
+            "sha256": "7a7f9f238d0b2c3e63a36dfcdca206c103212b2af2dfb68c5a54785c5806214b",
+            "mtime": "2026-11-25T10:00:32+08:00"
+        },
+        "tests/review-policy.php": {
+            "size": 1393,
+            "sha256": "f693009872419a8ae39c60387dbebd4c8ef104414d1c159a834e6a2ed845a8cc",
+            "mtime": "2026-11-25T09:57:45+08:00"
+        },
+        "tests/review-reply.php": {
+            "size": 2030,
+            "sha256": "e766064ac5ff5c1d7212614eb6924aa8613a2b1d130373f54868bc7ddb4d633f",
+            "mtime": "2026-11-25T09:51:29+08:00"
+        },
+        "tests/run.php": {
+            "size": 4887,
+            "sha256": "6d8986cbab72ea470832115a25506d2df63a50c8f0e2908460699108a0d9d9d2",
+            "mtime": "2026-11-24T18:42:49+08:00"
+        },
+        "tests/security.php": {
+            "size": 2473,
+            "sha256": "19757ace82fdcc4d92d70212d481cf9eac21d5131a034710f239fe19b6fc4871",
+            "mtime": "2026-11-24T19:44:10+08:00"
+        },
+        "tests/seller-listings.php": {
+            "size": 2247,
+            "sha256": "2d80be08180e3c0cc3d3a18914c6f2a6c48eccb1de402eeb452e707e425ebd29",
+            "mtime": "2026-11-24T19:53:00+08:00"
+        },
+        "tests/storefront.php": {
+            "size": 3463,
+            "sha256": "e53638baf6dd983853679fc0905f235d035fb412b44dcb73044918acd36fe2d6",
+            "mtime": "2026-11-25T09:46:07+08:00"
+        },
+        "tests/throttle.php": {
+            "size": 1794,
+            "sha256": "3dd1d8272c7a6bfea16cb4e04a7673fc412338160e5d342044cfa5702c319334",
+            "mtime": "2026-11-24T19:32:07+08:00"
+        },
+        "tests/trade.php": {
+            "size": 3144,
+            "sha256": "0a9741a267b07239d4c277998a84e05644999dfbc76e33de3fccf04c8fdb62ad",
+            "mtime": "2026-11-24T19:02:44+08:00"
+        },
+        "tests/upload.php": {
+            "size": 3093,
+            "sha256": "aaae079d2eeea847ccf4bebba8682c602ad678f6aad0f450404bdbc95f8336bf",
+            "mtime": "2026-11-24T18:58:13+08:00"
+        },
+        "views/pages/admin-api-tokens.php": {
+            "size": 2901,
+            "sha256": "e9780e0f032421c010c3886e71a67e97b1aa134f42a34e070ed65819c28f3511",
+            "mtime": "2026-11-25T10:16:39+08:00"
+        },
+        "views/pages/admin-commission.php": {
+            "size": 5293,
+            "sha256": "53e71cd73d49d42645026f82569c422ad713ff24f3aa241a95d4d58ed9133d66",
+            "mtime": "2026-11-25T10:15:02+08:00"
+        },
+        "views/pages/admin-credits.php": {
+            "size": 6559,
+            "sha256": "9ec97f4b623545c94120e831858a4d677f1e8ea3ac8a1ba86bf687db7977cc25",
+            "mtime": "2026-11-25T10:02:47+08:00"
+        },
+        "views/pages/admin-kyc.php": {
+            "size": 2282,
+            "sha256": "e54d50cbd3d110aeb8733a2b1bf695436e6cf2959a672d706014600a400a1304",
+            "mtime": "2026-11-25T10:04:34+08:00"
+        },
+        "views/pages/admin-listings.php": {
+            "size": 2670,
+            "sha256": "6c7734996996f09a17f1966d12ac2455e2c9fca6dfff03d83330258d05c9639e",
+            "mtime": "2026-11-24T19:38:25+08:00"
+        },
+        "views/pages/admin-payments.php": {
+            "size": 4178,
+            "sha256": "a9b47fed4afb3f26eac232d3bf0adbed32a879af73ea3fa946d9079c9a50adbf",
+            "mtime": "2026-11-25T10:13:09+08:00"
+        },
+        "views/pages/admin.php": {
+            "size": 1753,
+            "sha256": "a56e2ed4d77e9c046635fabc4ca32aaed316cf2e57ecba013ea241c5d2b7f396",
+            "mtime": "2026-11-24T18:35:16+08:00"
+        },
+        "views/pages/bom.php": {
+            "size": 2415,
+            "sha256": "12e81db4ef55c3df612a5bf5770e2c9ac7dc91c63fb10ecaed0a137825dc4528",
+            "mtime": "2026-11-24T18:58:02+08:00"
+        },
+        "views/pages/detail.php": {
+            "size": 14229,
+            "sha256": "bce818a9365b33c819c477c4e6e7f4ad4a8a0139160e23434f3b88a90756398a",
+            "mtime": "2026-11-25T10:02:38+08:00"
+        },
+        "views/pages/error.php": {
+            "size": 715,
+            "sha256": "6d1aff429ff38a9ca9a036d00cae3c5677ccdc7d5a5d17adaeb33358510d9230",
+            "mtime": "2026-11-24T18:35:24+08:00"
+        },
+        "views/pages/home.php": {
+            "size": 1777,
+            "sha256": "e7dacd9f88e648882d24715fa3a2707e47efa8ee9f63a09458420bac9d969e7d",
+            "mtime": "2026-11-24T19:20:46+08:00"
+        },
+        "views/pages/login.php": {
+            "size": 2761,
+            "sha256": "580044284a41f0dfed1e0c5b097ca54ba32a925bf5a580ef6b8df61592042da9",
+            "mtime": "2026-11-24T19:28:33+08:00"
+        },
+        "views/pages/order.php": {
+            "size": 1885,
+            "sha256": "b4ab093b6c712d13710551775210929e697710a9377c310dfc5875328f2c1a81",
+            "mtime": "2026-11-24T19:17:06+08:00"
+        },
+        "views/pages/pda.php": {
+            "size": 1284,
+            "sha256": "96d0a2729565514d138ad8a408cf5cf3b2716873c603076ef4724a9bd2241e3f",
+            "mtime": "2026-11-24T18:35:16+08:00"
+        },
+        "views/pages/qc.php": {
+            "size": 1948,
+            "sha256": "17b55c53963c1bd19bfc17d0ab71cb85a845f20fe939724ebddc7a6bda68eff8",
+            "mtime": "2026-11-24T18:35:02+08:00"
+        },
+        "views/pages/quote.php": {
+            "size": 1673,
+            "sha256": "c305fe849b478f32d3090d983c7736b5883d6e8a52508f392088b48aeed4b255",
+            "mtime": "2026-11-24T18:35:02+08:00"
+        },
+        "views/pages/search.php": {
+            "size": 2059,
+            "sha256": "b4cabee9c3ba08b462225a56e4fef98d64fcf85e5e5d70fccad5d88b59ea7627",
+            "mtime": "2026-11-24T19:20:46+08:00"
+        },
+        "views/pages/seller-images.php": {
+            "size": 3358,
+            "sha256": "56c049a9b918a351bd9993b3c8b2ffbb5ff04de8c4f9b0bc73a0f6c13436a588",
+            "mtime": "2026-11-25T10:08:54+08:00"
+        },
+        "views/pages/seller-kyc.php": {
+            "size": 3816,
+            "sha256": "a63bcb97f4b1ae492f9c7fa15ad3598b20a1b1ca6a1fe9b0074c6809c7706858",
+            "mtime": "2026-11-25T10:08:54+08:00"
+        },
+        "views/pages/seller-listings.php": {
+            "size": 2166,
+            "sha256": "185457a1f4f97a5263608f0fb81c6ebe8db4b9711d4d459b11d5f2df75040c8a",
+            "mtime": "2026-11-25T10:08:54+08:00"
+        },
+        "views/pages/seller.php": {
+            "size": 4181,
+            "sha256": "8dc60b72d7d7155459c6700bc820d83937097c3045946e32d5bcb0be4eb8ae9f",
+            "mtime": "2026-11-24T19:41:08+08:00"
+        },
+        "views/pages/settlement.php": {
+            "size": 1308,
+            "sha256": "c3fae014379d31339593d5cc9ab20a0b4360a4ea3ad3d2b59914323536b49e9f",
+            "mtime": "2026-11-24T18:35:16+08:00"
+        },
+        "views/pages/shop.php": {
+            "size": 4093,
+            "sha256": "6ee1884bba395cffff1a46ff0400004f8da2b22ad52cf3a3c3cb8cf8af28a42c",
+            "mtime": "2026-11-25T10:02:43+08:00"
+        },
+        "views/pages/shops.php": {
+            "size": 1936,
+            "sha256": "5a9e1e8ff4ab5b1ed9a7f7b91785387fdb8af2f7053209e3da8d41af800c6d50",
+            "mtime": "2026-11-25T09:43:04+08:00"
+        },
+        "views/pages/trace.php": {
+            "size": 1816,
+            "sha256": "3f9cef01fe30e2c7363fbee6fd803404c3b71aa4d962ae2160852520e0d8a32a",
+            "mtime": "2026-11-24T18:35:24+08:00"
+        },
+        "views/pages/ui.php": {
+            "size": 3081,
+            "sha256": "36a513fe8164bd596de9d10b5ef4257ecb33a765a6b5da21a7c80fee73bc4690",
+            "mtime": "2026-11-24T18:35:16+08:00"
+        }
+    }
+}

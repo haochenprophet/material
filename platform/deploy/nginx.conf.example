@@ -1,0 +1,58 @@
+# 物格云 / MaterialGrid — Nginx 示例
+# 生产必须用 Nginx + PHP-FPM；不要用 Apache mod_php 直接暴露公网。
+# 路径按实际部署调整；DocumentRoot 只指向 platform/public。
+
+server {
+    listen 80;
+    server_name material.example.com;
+
+    root /var/www/material/platform/public;
+    index index.php;
+
+    # 安全头（HSTS 在 HTTPS 启用后再加）
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header Permissions-Policy "camera=(self), microphone=(), geolocation=()" always;
+    # HTTPS 启用后再打开 HSTS：
+    # add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+
+    # 静态资源
+    location /assets/ {
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+        try_files $uri =404;
+    }
+
+    # 禁止访问隐藏文件/环境文件
+    location ~ /\.(?!well-known) {
+        deny all;
+        access_log off;
+        log_not_found off;
+    }
+
+    # storage 不在 public 下；双保险
+    location ^~ /storage/ {
+        deny all;
+    }
+
+    # 上传大小（BOM 1MB + 余量）
+    client_max_body_size 12m;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param SCRIPT_NAME $fastcgi_script_name;
+        fastcgi_pass unix:/run/php/php8.4-fpm.sock;
+        fastcgi_read_timeout 30s;
+    }
+
+    # 禁止直接执行上传目录（本方案上传在 storage，不在 public）
+    location ~* /uploads/.*\.(php|phtml|phar)$ {
+        deny all;
+    }
+}
