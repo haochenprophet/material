@@ -1,0 +1,55 @@
+# 全仓库文件管理约束（root）
+#
+# 原则：源码必须可被 git 追踪；生成物/运行时/备份/密钥不得进入仓库。
+# 注意：.gitignore 只影响未跟踪文件，不会自动移除已跟踪的历史文件。
+
+# 运行时与生成物
+**/releases/
+**/storage/
+**/backups/
+**/checkpoints/
+**/migration-test-*/
+**/preview/
+**/uploads/
+**/cache/
+**/tmp/
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+*.crdownload
+*.part
+
+# 本地数据库
+*.sqlite
+*.sqlite3
+*.db
+
+# 依赖/构建
+node_modules/
+vendor/
+dist/
+build/
+__pycache__/
+*.pyc
+
+# 密钥
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS / 编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# 压缩包/备份
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
