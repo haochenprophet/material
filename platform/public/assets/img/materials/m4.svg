@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#bfdbfe"/></linearGradient></defs>
+<rect width="800" height="600" fill="url(#g)"/><rect x="54" y="54" width="692" height="492" rx="26" fill="#ffffff" opacity=".55"/>
+<text x="400" y="250" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="44" font-weight="700" fill="#1e3a8a">REVIEWER-TEST</text>
+<text x="400" y="305" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="22" fill="#475569">Verified batch</text>
+<text x="400" y="480" text-anchor="middle" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16" fill="#64748b">物格云 · 实拍/示意 · traceable</text>
+</svg>
